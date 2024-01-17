@@ -24,6 +24,7 @@
   --blue-major: #1D4289;
   --white-major: #FFF;
   --black-major: #000;
+  --hover: #adbfe0;
 
   /* Font Family */
   --ff-lora: 'Lora', serif;
@@ -81,11 +82,19 @@ img {
   max-width: 100%;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  display: grid; 
+  display: grid;
+  grid-template-rows: max-content min-content min-content;
   background-color: var(--white-major);
   color: var(--black-major);
   font-family: var(--ff-merriweather);
+  font-weight: var(--w4);
   font-size: var(--s16);
   line-height: var(--lh-mid);
   height: 100vh;
@@ -97,10 +106,71 @@ body {
 3.  Typography
 */
 
+nav {
+  text-transform: uppercase;
+}
+
+nav {
+  line-height: 1;
+}
+
+nav,
+.logo-wrap {
+  font-family: var(--ff-lora);
+}
+
+.logo-wrap h1 {
+  font-size: var(--s20);
+}
+
+nav {
+  font-size: var(--s21);
+}
+
+nav,
+.logo-wrap h1 {
+  font-weight: var(--w5);
+}
+
+.logo-wrap p {
+  font-weight: var(--w7);
+}
+
+.logo-wrap p {
+  font-style: italic
+}
+
+.navigation-wrap {
+  text-align: end;
+}
+
+
 
 /* 
 4.  Colors
 */
+
+.navigation-wrap,
+header {
+  background-color: var(--blue-major);
+}
+
+.overlay {
+  background-color: var(--black-major);
+  opacity: 60%;
+}
+
+header,
+nav a {
+  color: var(--white-major);
+}
+
+nav a:hover {
+  color: var(--hover);
+  transition: 500ms;
+}
+
+
 
 
 /* 
@@ -112,20 +182,92 @@ body {
 6.  Flex
 */
 
+.navigation-wrap,
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.menu-container,
+.logo-wrap section {
+  align-items: flex-end;
+}
+
+.menu-container {
+  flex: 1;
+}
+
 
 /* 
 7.  Layout
 */
+.nav-wrap,
+.hidden {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation-wrap {
+  height: 100vh;
+  border-radius: 0 0 0 250px;
+}
 
 
 /* 
 8.  Position
 */
 
+header,
+body {
+  position: relative;
+}
+
+.navigation-wrap,
+.overlay {
+  position: absolute;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+}
+
+.navigation-wrap {
+  right: 0px;
+}
+
+.overlay {
+  z-index: 9;
+}
+
+.navigation-wrap {
+  z-index: 10;
+}
 
 /* 
 9.  Padding
 */
+
+.close-btn-wrap,
+.menu-container,
+.menu-wrap {
+  padding: 10px;
+}
+
+.logo-wrap {
+  padding: 20px 0 20px 20px;
+}
 
 
 /* 
@@ -141,3 +283,115 @@ body {
 /* 
 12. @media
 */
+
+@media (min-width: 1200px) {
+  
+  /* 
+  3.  Typography
+  */
+
+  .logo-wrap h1,
+  nav {
+    font-size: var(--s30);
+  }
+
+  .logo-wrap p {
+    font-size: var(--s24);
+  }
+  
+  
+
+  /* 
+  4.  Colors
+  */
+
+
+  /* 
+  5.  Grid
+  */
+
+
+  /* 
+  6.  Flex
+  */
+
+  nav ul {
+    display: flex;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .trigger,
+  .logo-wrap {
+    flex: 100%;
+  }
+
+  .logo-wrap{
+    align-items: flex-start;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav ul,
+  header {
+    gap: 30px;
+  }
+
+
+
+  /* 
+  7.  Layout
+  */
+
+  .close-btn-wrap,
+  .social-menu,
+  .menu-container {
+    display: none;
+  }
+
+
+  nav {
+    display: block;
+  }
+
+  .nav-wrap {
+    width: 100%;
+  }
+
+
+
+
+
+
+  /* 
+  8.  Position
+  */
+
+
+  /* 
+  9.  Padding
+  */
+
+  .logo-wrap {
+    padding: 0;
+  }
+
+  header {
+    padding: 30px
+  }
+
+
+  /* 
+  10. Margin
+  */
+
+
+  /* 
+  11. Background
+  */
+
+}
