@@ -1,0 +1,143 @@
+/* Table of contents::after
+
+1.  Custom Variables
+2.  Global Styles
+3.  Typography
+4.  Colors
+5.  Grid
+6.  Flex
+7.  Layout
+8.  Position
+9.  Padding
+10. Margin
+11. Background
+12. @media
+
+*/
+
+/* 
+1.  Custom Variables
+*/
+
+:root {
+  /* Colors */
+  --blue-major: #1D4289;
+  --white-major: #FFF;
+  --black-major: #000;
+
+  /* Font Family */
+  --ff-lora: 'Lora', serif;
+  --ff-merriweather: 'Merriweather', serif;
+
+  /* Font weight */
+  --w4: 400;
+  --w5: 500;
+  --w6: 600;
+  --w7: 700;
+
+  /* Font Sizes */
+  --s16: 1rem;
+  --s20: 1.25rem;
+  --s21: 1.3125rem;
+  --s24: 1.5rem;
+  --s30: 1.875rem;
+  --s36: 2.25rem;
+
+  /* Line Height */
+  --lh-mid: 1.5;
+
+  /* Border Radius */
+  --r10: 10px;
+  --r20: 20px;
+}
+
+
+/* 
+2.  Global Styles
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid; 
+  background-color: var(--white-major);
+  color: var(--black-major);
+  font-family: var(--ff-merriweather);
+  font-size: var(--s16);
+  line-height: var(--lh-mid);
+  height: 100vh;
+  margin: 0;
+}
+
+
+/* 
+3.  Typography
+*/
+
+
+/* 
+4.  Colors
+*/
+
+
+/* 
+5.  Grid
+*/
+
+
+/* 
+6.  Flex
+*/
+
+
+/* 
+7.  Layout
+*/
+
+
+/* 
+8.  Position
+*/
+
+
+/* 
+9.  Padding
+*/
+
+
+/* 
+10. Margin
+*/
+
+
+/* 
+11. Background
+*/
+
+
+/* 
+12. @media
+*/
