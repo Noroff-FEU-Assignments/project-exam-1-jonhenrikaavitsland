@@ -314,7 +314,7 @@ body {
   /* 
   6.  Flex
   */
-
+  .nav-wrap,
   nav ul {
     display: flex;
   }
