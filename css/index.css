@@ -182,11 +182,13 @@ nav a:hover {
 6.  Flex
 */
 
+.mobile-nav,
 .navigation-wrap,
 .flex {
   display: flex;
 }
 
+.mobile-nav,
 .flex-col {
   flex-direction: column;
 }
@@ -196,8 +198,16 @@ nav a:hover {
   align-items: flex-end;
 }
 
+.navigation-wrap {
+  justify-content: space-between;
+}
+
 .menu-container {
   flex: 1;
+}
+
+.mobile-nav {
+  gap: 30px;
 }
 
 
@@ -219,6 +229,7 @@ nav a:hover {
 }
 
 .navigation-wrap {
+  width: 250px;
   height: 100vh;
   border-radius: 0 0 0 250px;
 }
@@ -259,14 +270,23 @@ body {
 9.  Padding
 */
 
+.navigation-wrap,
 .close-btn-wrap,
 .menu-container,
 .menu-wrap {
   padding: 10px;
 }
 
+.mobile-nav {
+  padding: 10px 10px 10px 0;
+}
+
 .logo-wrap {
   padding: 20px 0 20px 20px;
+}
+
+.mobile-nav a {
+  padding: 5px 0;
 }
 
 
