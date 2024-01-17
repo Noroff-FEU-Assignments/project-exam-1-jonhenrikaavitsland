@@ -145,7 +145,6 @@ nav,
 }
 
 
-
 /* 
 4.  Colors
 */
@@ -169,8 +168,6 @@ nav a:hover {
   color: var(--hover);
   transition: 500ms;
 }
-
-
 
 
 /* 
