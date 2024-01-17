@@ -368,7 +368,7 @@ body {
   */
 
   .close-btn-wrap,
-  .social-menu,
+  .hide-on-desktop,
   .menu-container {
     display: none;
   }
