@@ -105,7 +105,6 @@ body {
 }
 
 /* The following code is a loader from https://loading.io/css/ that are released under the CC0 License, "creative commons" */
-
 .lds-facebook {
   display: inline-block;
   position: relative;
@@ -142,6 +141,7 @@ body {
     height: 32px;
   }
 }
+/* End of loader code referenced above */
 
 
 /* 
@@ -290,6 +290,7 @@ footer,
   flex-direction: column;
 }
 
+.about-main article,
 .profile-img-container,
 .about-part-1,
 .about-main,
@@ -368,6 +369,10 @@ footer {
 .overlay,
 .link-container {
   width: 100%;
+}
+
+.heading-wrap {
+  width: max-content
 }
 
 .profile-img-container {
