@@ -190,6 +190,7 @@ footer,
   display: flex;
 }
 
+footer,
 .mobile-nav,
 .flex-col {
   flex-direction: column;
@@ -199,13 +200,17 @@ footer,
   align-items: center;
 }
 
-footer,
 .menu-container,
 .logo {
   align-items: flex-end;
 }
 
+.copyright,
 .link-container {
+  justify-content: center;
+}
+
+footer {
   justify-content: flex-end;
 }
 
@@ -213,7 +218,6 @@ footer,
   justify-content: space-between;
 }
 
-.copyright,
 .menu-container {
   flex: 1;
 }
@@ -224,6 +228,10 @@ footer,
 
 .link-container {
   gap: 10px;
+}
+
+footer {
+  gap: 20px;
 }
 
 .mobile-nav {
@@ -244,12 +252,17 @@ footer,
 }
 
 .copyright {
-  height: min-content;
+  height: 20px;
   width: 100%;
 }
 
 .overlay {
   height: 100%;
+  width: 100%;
+}
+
+.overlay,
+.link-container {
   width: 100%;
 }
 
@@ -260,7 +273,7 @@ footer,
 }
 
 footer {
-  height: 230px;
+  height: 200px;
 }
 
 
@@ -411,17 +424,12 @@ footer {
   }
 
 
-
   /* 
   6.  Flex
   */
   .nav-wrap,
   nav ul {
     display: flex;
-  }
-
-  .link-container {
-    flex-direction: row;
   }
 
   header {
@@ -437,10 +445,15 @@ footer {
     align-items: flex-start;
   }
 
-  .link-container {
+  footer {
     align-items: flex-end;
   }
 
+  .copyright {
+    justify-content: flex-start;
+  }
+
+  .link-container,
   nav ul {
     justify-content: flex-end;
   }
