@@ -107,6 +107,7 @@ body {
 3.  Typography
 */
 
+.heading,
 nav {
   text-transform: uppercase;
 }
@@ -115,29 +116,32 @@ nav {
   line-height: 1;
 }
 
+.heading,
 nav,
 .logo-wrap {
   font-family: var(--ff-lora);
 }
 
-.logo-wrap h1 {
+.logo-heading {
   font-size: var(--s20);
 }
 
+.heading,
 nav {
   font-size: var(--s21);
 }
 
+.heading,
 nav,
-.logo-wrap h1 {
+.logo-heading {
   font-weight: var(--w5);
 }
 
-.logo-wrap p {
+.logo-p {
   font-weight: var(--w7);
 }
 
-.logo-wrap p {
+.logo-p {
   font-style: italic
 }
 
