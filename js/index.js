@@ -1,3 +1,3 @@
-import { handleMenu } from "./menu/handleMenu.js";
+import { handleMenu } from "./ui/handleMenu.js";
 
 handleMenu();
