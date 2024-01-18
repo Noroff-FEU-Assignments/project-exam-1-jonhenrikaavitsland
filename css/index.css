@@ -76,6 +76,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: var(--white-major);
 }
 
 img {
@@ -90,7 +91,7 @@ nav ul {
 
 body {
   display: grid;
-  grid-template-rows: max-content min-content min-content;
+  grid-template-rows: max-content 1fr min-content;
   background-color: var(--white-major);
   color: var(--black-major);
   font-family: var(--ff-merriweather);
@@ -149,6 +150,7 @@ nav,
 4.  Colors
 */
 
+footer,
 .navigation-wrap,
 header {
   background-color: var(--blue-major);
@@ -159,11 +161,13 @@ header {
   opacity: 60%;
 }
 
+footer,
 header,
 nav a {
   color: var(--white-major);
 }
 
+.link-container a:hover,
 nav a:hover {
   color: var(--hover);
   transition: 500ms;
@@ -179,6 +183,7 @@ nav a:hover {
 6.  Flex
 */
 
+footer,
 .mobile-nav,
 .navigation-wrap,
 .flex {
@@ -190,17 +195,35 @@ nav a:hover {
   flex-direction: column;
 }
 
+.copyright {
+  align-items: center;
+}
+
+footer,
 .menu-container,
 .logo {
   align-items: flex-end;
+}
+
+.link-container {
+  justify-content: flex-end;
 }
 
 .navigation-wrap {
   justify-content: space-between;
 }
 
+.copyright,
 .menu-container {
   flex: 1;
+}
+
+.copyright {
+  gap: 6px;
+}
+
+.link-container {
+  gap: 10px;
 }
 
 .mobile-nav {
@@ -220,6 +243,11 @@ nav a:hover {
   cursor: pointer;
 }
 
+.copyright {
+  height: min-content;
+  width: 100%;
+}
+
 .overlay {
   height: 100%;
   width: 100%;
@@ -229,6 +257,10 @@ nav a:hover {
   width: 250px;
   height: 100vh;
   border-radius: 0 0 0 250px;
+}
+
+footer {
+  height: 200px;
 }
 
 
@@ -267,6 +299,14 @@ body {
 9.  Padding
 */
 
+footer {
+  padding: 0 20px 20px 20px;
+}
+
+.link-container a {
+  padding: 5px 0;
+}
+
 .navigation-wrap,
 .close-btn-wrap,
 .menu-container,
@@ -295,6 +335,12 @@ body {
 /* 
 11. Background
 */
+
+footer {
+  background-image: url("/assets/bg-waves-upside-down.svg");
+  background-repeat: no-repeat;
+  background-position-y: top 0;
+}
 
 
 /* 
@@ -353,6 +399,18 @@ body {
     grid-row: 1 / 2;
   }
 
+  footer {
+    grid-row: 3 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+  }
+
+  .copyright {
+    grid-column: 2 / 3;
+  }
+
+
 
   /* 
   6.  Flex
@@ -360,6 +418,10 @@ body {
   .nav-wrap,
   nav ul {
     display: flex;
+  }
+
+  .link-container {
+    flex-direction: row;
   }
 
   header {
@@ -375,6 +437,10 @@ body {
     align-items: flex-start;
   }
 
+  .link-container {
+    align-items: flex-end;
+  }
+
   nav ul {
     justify-content: flex-end;
   }
@@ -382,6 +448,10 @@ body {
   nav ul,
   header {
     gap: 30px;
+  }
+
+  .link-container {
+    gap: 40px;
   }
 
 
@@ -405,6 +475,10 @@ body {
     width: 100%;
   }
 
+  footer {
+    height: 150px;
+  }
+
 
 
 
@@ -421,6 +495,10 @@ body {
 
   .logo-wrap {
     padding: 0;
+  }
+  
+  footer {
+    padding: 0 30px 30px 30px;
   }
 
   header {
