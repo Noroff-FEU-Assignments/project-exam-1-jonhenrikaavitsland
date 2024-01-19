@@ -1,6 +1,6 @@
 import { mediaObjects } from "../api/fetch/media.js";
-import { renderAboutImages } from "../render/renderAboutImages..js";
-import { renderProfileImage } from "../render/renderProfileImage.js";
+import { renderAboutImages } from "../render/about/renderAboutImages..js";
+import { renderProfileImage } from "../render/about/renderProfileImage.js";
 
 const profileImgParent = document.querySelector(".profile-img-container");
 

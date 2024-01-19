@@ -1,4 +1,4 @@
-import { createImg } from "./createImg.js";
+import { createImg } from "../image/createImg.js";
 
 export function renderAboutImages(media) {
   const imageParent1 = document.querySelector(".about-part-2 div");
