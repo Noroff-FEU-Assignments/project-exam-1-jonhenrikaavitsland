@@ -38,6 +38,7 @@
 
   /* Font Sizes */
   --s16: 1rem;
+  --s18: 1.125rem;
   --s20: 1.25rem;
   --s21: 1.3125rem;
   --s24: 1.5rem;
@@ -215,6 +216,11 @@ nav,
   text-align: end;
 }
 
+.heading {
+  text-decoration: 3px underline var(--blue-major);
+  text-underline-offset: 3px;
+}
+
 
 /* 
 4.  Colors
@@ -267,7 +273,7 @@ nav a:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.profile-img {
+.about-main img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -424,9 +430,9 @@ footer {
   width: 200px;
 }
 
-.heading {
+/* .heading {
   border-bottom: 3px solid var(--blue-major);
-}
+} */
 
 .about-img,
 .cta {
@@ -582,10 +588,16 @@ footer {
     font-size: var(--s30);
   }
 
+  .about-main article p {
+    font-size: var(--s18);
+  }
+
   .logo-wrap p {
     font-size: var(--s24);
   }
 
+  .blog-heading-white,
+  .blog-heading,
   .heading {
     font-size: var(--s36);
   }
@@ -596,6 +608,8 @@ footer {
 
   .heading {
     line-height: 40px;
+    text-decoration: 6px underline var(--blue-major);
+    text-underline-offset: 6px;
   }
   
   
@@ -665,7 +679,6 @@ footer {
   .about-part-3 > div {
     grid-column: 1 / 2;
   }
-
 
 
   /* 
@@ -759,10 +772,6 @@ footer {
 
   footer {
     height: 180px;
-  }
-
-  .heading {
-    border-bottom: 6px solid var(--blue-major);
   }
 
 
