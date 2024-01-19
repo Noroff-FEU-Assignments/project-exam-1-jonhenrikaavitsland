@@ -267,6 +267,10 @@ nav a:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.profile-img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 
 /* 
 5.  Grid
@@ -376,7 +380,7 @@ footer {
 }
 
 .profile-img-container {
-  height: 335px;
+  height: 339px;
   max-width: 335px;
 }
 
@@ -386,8 +390,13 @@ footer {
   border-radius: 0 0 0 250px;
 }
 
+.profile-img,
 footer {
   height: 200px;
+}
+
+.profile-img {
+  width: 200px;
 }
 
 .heading {
@@ -396,6 +405,10 @@ footer {
 
 .cta {
   border-radius: var(--r20);
+}
+
+.profile-img {
+  border-radius: 200px;
 }
 
 
@@ -480,8 +493,6 @@ footer {
 }
 
 
-
-
 /* 
 10. Margin
 */
@@ -499,6 +510,10 @@ footer {
 
 .about-main .cta {
   margin: 50px 0 0 0;
+}
+
+.profile-img {
+  margin-bottom: 12px;
 }
 
 
