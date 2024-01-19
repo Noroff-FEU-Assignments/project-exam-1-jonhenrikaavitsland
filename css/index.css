@@ -585,6 +585,18 @@ footer {
   .logo-wrap p {
     font-size: var(--s24);
   }
+
+  .heading {
+    font-size: var(--s36);
+  }
+
+  .about-main h2 {
+    text-align: start;
+  }
+
+  .heading {
+    line-height: 40px;
+  }
   
   
 
@@ -638,13 +650,35 @@ footer {
     grid-column: 2 / 3;
   }
 
+  .about-part-4,
+  .about-part-3,
+  .about-part-2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+  }
+
+  .about-part-4 > div,
+  .about-part-2 > div {
+    grid-column: 2 / 3;
+  }
+
+  .about-part-3 > div {
+    grid-column: 1 / 2;
+  }
+
+
 
   /* 
   6.  Flex
   */
+  .cta-wrap-about,
   .nav-wrap,
   nav ul {
     display: flex;
+  }
+
+  .about-part-1 {
+    flex-direction: row;
   }
 
   header {
@@ -673,6 +707,15 @@ footer {
     justify-content: flex-end;
   }
 
+  .about-part-2 > div,
+  .about-part-3 > div,
+  .about-part-4 > div,
+  .about-part-4 section,
+  .about-part-3 section,
+  .about-part-2 section {
+    justify-content: center;
+  }
+
   nav ul,
   header {
     gap: 30px;
@@ -682,6 +725,9 @@ footer {
     gap: 40px;
   }
 
+  .cta-wrap-about {
+    gap: 60px;
+  }
 
 
   /* 
@@ -694,22 +740,30 @@ footer {
     display: none;
   }
 
-
   nav {
     display: block;
   }
 
+  .about-part-2 > div,
+  .about-part-3 > div,
+  .about-part-4 > div,
   .nav-wrap {
     width: 100%;
+  }
+
+  .about-part-2 > div,
+  .about-part-3 > div,
+  .about-part-4 > div {
+    height: 100%;
   }
 
   footer {
     height: 180px;
   }
 
-
-
-
+  .heading {
+    border-bottom: 6px solid var(--blue-major);
+  }
 
 
   /* 
@@ -729,14 +783,32 @@ footer {
     padding: 0 30px 30px 30px;
   }
 
+  .about-part-1 {
+    padding: 0 30px 60px 30px;
+  }
+
+  .about-part-1 section {
+    padding: 0 60px
+  }
+
   header {
     padding: 30px
+  }
+
+  .cta-about  {
+    padding: 23px 64.6px;
   }
 
 
   /* 
   10. Margin
   */
+
+  .about-part-4 > div,
+  .about-part-3 > div,
+  .about-part-2 > div {
+    margin: 0;
+  }
 
 
   /* 
