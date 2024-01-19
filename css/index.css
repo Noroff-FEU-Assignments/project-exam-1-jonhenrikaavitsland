@@ -276,6 +276,22 @@ nav a:hover {
 5.  Grid
 */
 
+.about-part-4,
+.about-part-3,
+.about-part-2 {
+  display: grid;
+}
+
+.about-part-4 > div,
+.about-part-2 > div {
+  grid-row: 1 / 2;
+}
+
+.about-part-4,
+.about-part-3,
+.about-part-2 {
+  justify-items: center;
+}
 
 /* 
 6.  Flex
@@ -294,6 +310,9 @@ footer,
   flex-direction: column;
 }
 
+.about-part-4 > div,
+.about-part-3 > div,
+.about-part-2 > div,
 .about-main article,
 .profile-img-container,
 .about-part-1,
@@ -379,6 +398,12 @@ footer {
   width: max-content
 }
 
+.about-part-4 > div,
+.about-part-3 > div,
+.about-part-2 > div {
+  height: 300px;
+}
+
 .profile-img-container {
   height: 339px;
   max-width: 335px;
@@ -403,6 +428,7 @@ footer {
   border-bottom: 3px solid var(--blue-major);
 }
 
+.about-img,
 .cta {
   border-radius: var(--r20);
 }
@@ -502,6 +528,12 @@ footer {
 .about-part-2 h2,
 .about-part-1 h2 {
   margin-bottom: 10px;
+}
+
+.about-part-4 > div,
+.about-part-3 > div,
+.about-part-2 > div {
+  margin: 20px 0;
 }
 
 .profile-img-container {

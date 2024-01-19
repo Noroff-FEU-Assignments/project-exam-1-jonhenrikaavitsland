@@ -1,7 +1,11 @@
 export function renderProfileImage(media, parent) {
-  const element = document.createElement("img");
-  element.src = media[0].urlMedium;
-  element.setAttribute("alt", media[0].altText);
-  element.classList.add("profile-img");
-  parent.append(element);
+  for (let i = 0; i < media.length; i++) {
+    if (media[i].id === "55") {
+      const element = document.createElement("img");
+      element.src = media[i].urlMedium;
+      element.setAttribute("alt", media[i].altText);
+      element.classList.add("profile-img");
+      parent.append(element);
+    }
+  }
 }
