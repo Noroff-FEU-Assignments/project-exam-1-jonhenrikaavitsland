@@ -879,6 +879,10 @@ footer {
     height: 180px;
   }
 
+  .card-excerpt-container {
+    height: 250px;
+  }
+
 
   /* 
   8.  Position
@@ -917,6 +921,10 @@ footer {
 
   .cta-about  {
     padding: 23px 64.6px;
+  }
+
+  .blog-parent {
+    padding: 70px 0;
   }
 
 
