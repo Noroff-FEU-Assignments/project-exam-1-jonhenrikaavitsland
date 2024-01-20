@@ -289,7 +289,7 @@ nav a:hover {
 }
 
 .cta {
-  box-shadow: 0px 4px 4px 0px var(--Blue, #1D4289);
+  box-shadow: 0px 4px 4px 0px var(--blue-major, #1D4289);
 }
 
 .card-time,
@@ -838,6 +838,10 @@ footer {
     gap: 60px;
   }
 
+  .blog-parent {
+    gap: 100px;
+  }
+
 
   /* 
   7.  Layout
@@ -859,6 +863,10 @@ footer {
   .about-part-4 > div,
   .nav-wrap {
     width: 100%;
+  }
+
+  .card-container {
+    width: 450px;
   }
 
   .about-part-2 > div,

@@ -15,7 +15,7 @@ export function createCard(post, media) {
   const image = document.createElement("img");
   for (let i = 0; i < media.length; i++) {
     if (post.featuredMedia === media[i].id) {
-      image.src = `${media[i].urlMedium}`;
+      image.src = `${media[i].urlFull}`;
       image.setAttribute("alt", media[i].altText);
     }
   }
