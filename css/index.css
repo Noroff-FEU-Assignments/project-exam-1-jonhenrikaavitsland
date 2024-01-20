@@ -234,8 +234,12 @@ header {
   background-color: var(--blue-major);
 }
 
+.modal-container,
 .overlay {
   background-color: var(--black-major);
+}
+
+.overlay {
   opacity: 60%;
 }
 
@@ -248,6 +252,7 @@ header {
   transition: 500ms;
 }
 
+.modal-wrap,
 .about-part-4 section,
 .about-part-2 section,
 .blog-heading-white,
@@ -316,6 +321,8 @@ footer,
   flex-direction: column;
 }
 
+.close-modal,
+.modal-container,
 .about-part-4 > div,
 .about-part-3 > div,
 .about-part-2 > div,
@@ -327,11 +334,14 @@ footer,
   align-items: center;
 }
 
+.modal-wrap,
 .menu-container,
 .logo {
   align-items: flex-end;
 }
 
+.close-modal,
+.modal-container,
 .profile-img-wrap,
 .profile-img-container,
 .copyright,
@@ -385,10 +395,17 @@ footer {
   height: 20px;
 }
 
+.close-modal {
+  height: 50px;
+  width: 50px;
+}
+
+.modal-container,
 .overlay {
   height: 100%;
 }
 
+.modal-container,
 .profile-img-wrap,
 .profile-img-container,
 .about-part-4,
@@ -453,10 +470,15 @@ body {
   position: relative;
 }
 
+.modal-container {
+  position: fixed;
+}
+
 .navigation-wrap,
 .overlay {
   position: absolute;
 }
+
 
 .overlay {
   top: 0;
@@ -471,6 +493,7 @@ body {
   z-index: 9;
 }
 
+.modal-container,
 .navigation-wrap {
   z-index: 10;
 }
