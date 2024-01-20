@@ -4,7 +4,7 @@ export function renderProfileImage(media, parent) {
       const element = document.createElement("img");
       element.src = media[i].urlMedium;
       element.setAttribute("alt", media[i].altText);
-      element.classList.add("profile-img");
+      element.classList.add("profile-img", "cursor");
       parent.append(element);
     }
   }
