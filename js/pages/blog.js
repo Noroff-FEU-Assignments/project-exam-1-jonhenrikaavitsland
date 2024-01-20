@@ -1,3 +1,12 @@
-import { post } from "../render/post/currentPost.js";
+import { mediaObjects } from "../api/fetch/media.js";
+import { postsObject } from "../api/fetch/posts.js";
+import { renderCards } from "../render/blogCard/renderCards.js";
 
-console.log(post);
+const parentElement = document.querySelector(".blog-parent");
+
+try {
+  parentElement.innerHTML = "";
+  renderCards(postsObject, mediaObjects, parentElement);
+} catch (error) {
+  console.log("Oops! There was an error rendering cards!", error);
+}
