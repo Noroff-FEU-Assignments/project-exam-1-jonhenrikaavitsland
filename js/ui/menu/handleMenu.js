@@ -1,3 +1,6 @@
+import { closeMenuEsc } from "./closeMenuEsc.js";
+import { closeMenu } from "./closeMenu.js";
+
 export function handleMenu() {
   const menuBtn = document.querySelector(".menu-wrap");
   const navElement = document.querySelector("#nav-wrap");
@@ -15,18 +18,5 @@ export function handleMenu() {
     navElement.classList.add("navigation-wrap");
     navBar.classList.add("mobile-nav");
     overlay.classList.remove("hidden");
-  }
-
-  function closeMenu() {
-    navElement.classList.remove("navigation-wrap");
-    navElement.classList.add("nav-wrap");
-    navBar.classList.remove(".mobile-nav");
-    overlay.classList.add("hidden");
-  }
-
-  function closeMenuEsc(e) {
-    if (e.key === "Escape") {
-      closeMenu();
-    }
   }
 }

@@ -105,6 +105,11 @@ body {
   margin: 0;
 }
 
+/* Stops the scrolling effect of the background */
+body.modal-open {
+  overflow: hidden;
+}
+
 /* The following code is a loader from https://loading.io/css/ that are released under the CC0 License, "creative commons" */
 .lds-facebook {
   display: inline-block;
@@ -234,13 +239,10 @@ header {
   background-color: var(--blue-major);
 }
 
-.modal-container,
+.modal-bg,
 .overlay {
   background-color: var(--black-major);
-}
-
-.overlay {
-  opacity: 60%;
+  opacity: 80%;
 }
 
 .cta {
@@ -400,6 +402,7 @@ footer {
   width: 50px;
 }
 
+.modal-bg,
 .modal-container,
 .overlay {
   height: 100%;
@@ -412,6 +415,7 @@ footer {
 .about-part-2,
 .heading,
 .copyright,
+.modal-bg,
 .overlay,
 .link-container {
   width: 100%;
@@ -470,30 +474,25 @@ body {
   position: relative;
 }
 
-.modal-container {
-  position: fixed;
-}
-
+.modal-container,
 .navigation-wrap,
+.modal-bg,
 .overlay {
   position: absolute;
 }
 
-
-.overlay {
-  top: 0;
-  left: 0;
-}
-
+.modal-bg,
+.overlay,
 .navigation-wrap {
   right: 0px;
 }
 
+.modal-bg,
 .overlay {
   z-index: 9;
 }
 
-.modal-container,
+.modal-wrap,
 .navigation-wrap {
   z-index: 10;
 }
@@ -780,6 +779,7 @@ footer {
     display: block;
   }
 
+  .modal-small-container,
   .about-part-2 > div,
   .about-part-3 > div,
   .about-part-4 > div,
