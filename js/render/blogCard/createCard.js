@@ -4,6 +4,9 @@ export function createCard(post, media) {
 
   const element = document.createElement("div");
   element.classList.add("card-container", "cursor");
+  element.addEventListener("click", function () {
+    window.location.href = linkUrl;
+  });
 
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("card-img-container");
