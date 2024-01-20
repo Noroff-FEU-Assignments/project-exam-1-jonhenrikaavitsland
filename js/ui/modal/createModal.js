@@ -29,6 +29,7 @@ export function createModal(images, featuredImg, media) {
     smallImage.style.height = "50px";
     smallImage.style.borderRadius = "10px";
     smallImage.style.margin = "0 auto";
+    smallImage.classList.add("cursor");
     smallImagesContainer.append(smallImage);
   }
 
