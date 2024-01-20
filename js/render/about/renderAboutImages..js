@@ -7,15 +7,15 @@ export function renderAboutImages(media) {
 
   for (let i = 0; i < media.length; i++) {
     if (media[i].id === "56") {
-      const imgTwo = createImg(media[i]);
+      const imgTwo = createImg(media[i], "about-img");
       imageParent1.innerHTML = "";
       imageParent1.append(imgTwo);
     } else if (media[i].id === "57") {
-      const imgThree = createImg(media[i]);
+      const imgThree = createImg(media[i], "about-img");
       imageParent2.innerHTML = "";
       imageParent2.append(imgThree);
     } else if (media[i].id === "58") {
-      const imgFour = createImg(media[i]);
+      const imgFour = createImg(media[i], "about-img");
       imageParent3.innerHTML = "";
       imageParent3.append(imgFour);
     }

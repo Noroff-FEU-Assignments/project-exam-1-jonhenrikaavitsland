@@ -4,5 +4,5 @@ import { extractPosts } from "./extractPosts.js";
 
 const posts = await fetchData(urlPosts);
 
-const postsObject = extractPosts(posts);
+export const postsObject = extractPosts(posts);
 console.log(postsObject);
