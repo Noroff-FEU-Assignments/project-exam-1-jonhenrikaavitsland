@@ -313,6 +313,7 @@ nav a:hover {
 5.  Grid
 */
 
+.main-post-spesific,
 .about-part-4,
 .about-part-3,
 .about-part-2 {
@@ -503,9 +504,9 @@ footer {
   width: 200px;
 }
 
-/* .heading {
-  border-bottom: 3px solid var(--blue-major);
-} */
+.cta-view-more {
+  border: 0;
+}
 
 .card-img-container img {
   border-radius: 10px 10px 0 0;

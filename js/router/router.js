@@ -1,5 +1,7 @@
 export function router() {
   switch (location.pathname) {
+    case "/blog/post/":
+      return import("../pages/post.js");
     case "/blog/":
       return import("../pages/blog.js");
     case "/about/":
