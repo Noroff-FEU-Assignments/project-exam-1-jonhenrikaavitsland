@@ -7,5 +7,6 @@ export const endpointPages = "/wp-json/wp/v2/pages";
 export const pagination = "?page=1&per_page=100";
 
 export const urlMedia = host + endpointMedia + pagination;
-export const urlPosts = host + endpointPosts + pagination;
 export const urlPages = host + endpointPages + pagination;
+export const urlPosts = host + endpointPosts;
+

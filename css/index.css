@@ -216,6 +216,7 @@ nav,
   font-style: italic
 }
 
+.cta-view-more,
 .cta,
 .blog-heading-white,
 .blog-heading,
@@ -393,6 +394,10 @@ footer {
 
 .menu-container {
   flex: 1;
+}
+
+.cta-view-more {
+  flex: 100%;
 }
 
 .cta-card,
@@ -648,6 +653,10 @@ footer {
 
 .profile-img {
   margin-bottom: 12px;
+}
+
+.cta-view-more {
+  margin-top: 20px;
 }
 
 
