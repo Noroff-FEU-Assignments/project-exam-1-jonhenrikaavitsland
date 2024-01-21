@@ -14,4 +14,3 @@ try {
     error
   );
 }
-console.log(mediaObjects);

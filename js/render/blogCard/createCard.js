@@ -1,6 +1,5 @@
 export function createCard(post, media) {
   const linkUrl = `/blog/post/?id=${post.id}`;
-  console.log(post);
 
   const element = document.createElement("div");
   element.classList.add("card-container", "cursor");
