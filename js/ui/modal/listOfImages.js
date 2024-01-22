@@ -1,13 +1,12 @@
-import { pagesObject } from "../../api/fetch/pages.js";
 import { extractImgUrls } from "./extractImgUrls.js";
 
-export function listOfImgUrls() {
+export function listOfImgUrls(object) {
   const pageID = document.querySelector("main").id;
   let images;
 
-  for (let i = 0; i < pagesObject.length; i++) {
-    if (pagesObject[i].id === pageID) {
-      images = extractImgUrls(pagesObject[i].contentRendered);
+  for (let i = 0; i < object.length; i++) {
+    if (object[i].id === pageID) {
+      images = extractImgUrls(object[i].contentRendered);
     }
   }
   return images;

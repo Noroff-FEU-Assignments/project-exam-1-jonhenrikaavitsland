@@ -2,6 +2,9 @@ import { mediaObjects } from "../../api/fetch/media.js";
 import { listOfImgUrls } from "./listOfImages.js";
 import { createModal } from "./createModal.js";
 import { closeModal } from "./closeModal.js";
+import { pagesObject } from "../../api/fetch/pages.js";
+import { extractImages } from "../../render/post/extractImages.js";
+import { post } from "../../render/post/currentPost.js";
 
 export function displayModal() {
   let listOfImg;
@@ -12,7 +15,11 @@ export function displayModal() {
     if (target.tagName === "IMG") {
       clickedImg = target.src.replace(/-300x300/, "");
 
-      listOfImg = listOfImgUrls();
+      if (location.pathname === "/about/") {
+        listOfImg = listOfImgUrls(pagesObject);
+      } else if (location.pathname === "/blog/post/") {
+        listOfImg = extractImages(post);
+      }
 
       const modalParent = document.querySelector(".modal-parent");
       const modalContainer = document.querySelector(".modal-container");
