@@ -172,7 +172,7 @@ nav {
   line-height: var(--lh-27);
 }
 
-.hero-img h2,
+.hero-bottom h2,
 .post-title,
 .card-time,
 .card-heading,
@@ -189,7 +189,7 @@ nav,
   font-size: var(--s20);
 }
 
-.hero-img h2,
+.hero-bottom h2,
 .post-title,
 .card-heading,
 .cta,
@@ -210,7 +210,7 @@ nav,
   font-weight: var(--w6);
 }
 
-.hero-img h2,
+.hero-bottom h2,
 .post-title,
 .card-heading,
 .blog-heading-white,
@@ -302,7 +302,7 @@ nav a {
   color: var(--time-major);
 }
 
-.hero-img a:hover,
+.hero-bottom a:hover,
 .cta-card:hover,
 .link-container a:hover,
 nav a:hover {
@@ -331,7 +331,7 @@ nav a:hover {
 }
 
 .hero-overlay {
-  background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #000 73%);  ;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 63.64%, #000 100%);
 }
 
 
@@ -382,7 +382,7 @@ footer,
   flex-wrap: wrap;
 }
 
-.hero-img a,
+.hero-bottom a,
 .main-post-specific article,
 .cta-card,
 .close-modal,
@@ -405,8 +405,8 @@ footer,
   align-items: flex-end;
 }
 
+.hero-bottom,
 .hero-img,
-.hero-img a,
 .aligncenter,
 .blog-parent,
 .close-modal,
@@ -435,7 +435,7 @@ footer {
   flex: 100%;
 }
 
-.hero-img a,
+.hero-bottom a,
 .cta-card,
 .copyright {
   gap: 6px;
@@ -474,7 +474,6 @@ footer {
   cursor: pointer;
 }
 
-.hero-bottom,
 .copyright {
   height: 20px;
 }
@@ -515,7 +514,7 @@ footer {
 }
 
 .hero-overlay {
-  height: 50%;
+  height: 100%;
 }
 
 .about-part-4 > div,
@@ -535,10 +534,6 @@ footer {
 
 .hero-img {
   max-width: 1200px;
-}
-
-.hero-img a {
-  width: 80%;
 }
 
 .hero-img img{
@@ -587,10 +582,15 @@ footer {
   border-radius: 200px;
 }
 
+.hero-img img {
+  aspect-ratio: 16 / 6;
+}
+
 
 /* 
 8.  Position
 */
+
 .hero-img img,
 .hero-img,
 .card-img-container,
@@ -599,7 +599,6 @@ body {
   position: relative;
 }
 
-.hero-img a,
 .hero-overlay,
 .card-overlay,
 .modal-container,
@@ -621,22 +620,12 @@ body {
   left: 0px;
 }
 
-.hero-img a {
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .hero-img {
   z-index: 1;
 }
 
 .hero-overlay {
   z-index: 5;
-}
-
-.hero-img a {
-  z-index: 7;
 }
 
 .modal-bg,
@@ -663,6 +652,10 @@ footer {
 
 .about-part-1 {
   padding: 0 20px 40px 20px;
+}
+
+.hero-bottom {
+  padding: 0 0 20px 0;
 }
 
 .mobile-nav a {
@@ -803,10 +796,13 @@ footer {
     font-size: var(--s21);
   }
 
+  .hero-bottom i,
   .logo-wrap p {
     font-size: var(--s24);
   }
 
+
+  .hero-bottom h2,
   .post-title,
   .blog-heading-white,
   .blog-heading,
@@ -951,6 +947,10 @@ footer {
     justify-content: center;
   }
 
+  .hero-bottom a {
+    gap: 12px;
+  }
+
   nav ul,
   header {
     gap: 30px;
@@ -1081,4 +1081,7 @@ footer {
   11. Background
   */
 
+
+
 }
+
