@@ -917,10 +917,6 @@ footer {
     flex-direction: row;
   }
 
-  header {
-    flex-wrap: wrap;
-  }
-
   .trigger,
   .logo-wrap {
     flex: 100%;
@@ -930,6 +926,7 @@ footer {
     align-items: flex-start;
   }
 
+  .nav-wrap,
   footer {
     align-items: flex-end;
   }
