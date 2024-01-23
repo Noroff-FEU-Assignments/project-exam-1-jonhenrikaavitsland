@@ -172,6 +172,7 @@ nav {
   line-height: var(--lh-27);
 }
 
+.hero-img h2,
 .post-title,
 .card-time,
 .card-heading,
@@ -188,6 +189,7 @@ nav,
   font-size: var(--s20);
 }
 
+.hero-img h2,
 .post-title,
 .card-heading,
 .cta,
@@ -208,6 +210,7 @@ nav,
   font-weight: var(--w6);
 }
 
+.hero-img h2,
 .post-title,
 .card-heading,
 .blog-heading-white,
@@ -256,10 +259,16 @@ header {
   background-color: var(--blue-major);
 }
 
+.hero-img a,
 .modal-bg,
 .overlay {
   background-color: var(--black-major);
   opacity: 80%;
+}
+
+.hero-img,
+.hero-bottom {
+  background-color: var(--black-major);
 }
 
 .cta {
@@ -293,6 +302,7 @@ nav a {
   color: var(--time-major);
 }
 
+.hero-img a:hover,
 .cta-card:hover,
 .link-container a:hover,
 nav a:hover {
@@ -318,6 +328,10 @@ nav a:hover {
 
 .card-overlay {
   background: linear-gradient(180deg, rgba(1, 1, 1, 0.00) 0%, rgba(1, 1, 1, 0.23) 17.5%, rgba(1, 1, 1, 0.74) 47%, #010101 100%);  ;
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #000 73%);  ;
 }
 
 
@@ -368,6 +382,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.hero-img a,
 .main-post-specific article,
 .cta-card,
 .close-modal,
@@ -390,6 +405,8 @@ footer,
   align-items: flex-end;
 }
 
+.hero-img,
+.hero-img a,
 .aligncenter,
 .blog-parent,
 .close-modal,
@@ -418,6 +435,7 @@ footer {
   flex: 100%;
 }
 
+.hero-img a,
 .cta-card,
 .copyright {
   gap: 6px;
@@ -456,6 +474,7 @@ footer {
   cursor: pointer;
 }
 
+.hero-bottom,
 .copyright {
   height: 20px;
 }
@@ -475,6 +494,8 @@ footer {
   height: 100%;
 }
 
+.hero-bottom,
+.hero-overlay,
 .card-overlay,
 .modal-container,
 .profile-img-wrap,
@@ -493,6 +514,10 @@ footer {
   width: max-content
 }
 
+.hero-overlay {
+  height: 50%;
+}
+
 .about-part-4 > div,
 .about-part-3 > div,
 .about-part-2 > div {
@@ -506,6 +531,18 @@ footer {
 .profile-img-container {
   height: 339px;
   max-width: 335px;
+}
+
+.hero-img {
+  max-width: 1200px;
+}
+
+.hero-img a {
+  width: 80%;
+}
+
+.hero-img img{
+  width: 200%;
 }
 
 .card-excerpt-container {
@@ -554,13 +591,16 @@ footer {
 /* 
 8.  Position
 */
-
+.hero-img img,
+.hero-img,
 .card-img-container,
 header,
 body {
   position: relative;
 }
 
+.hero-img a,
+.hero-overlay,
 .card-overlay,
 .modal-container,
 .navigation-wrap,
@@ -575,9 +615,28 @@ body {
   right: 0px;
 }
 
+.hero-overlay,
 .card-overlay {
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
+}
+
+.hero-img a {
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-img {
+  z-index: 1;
+}
+
+.hero-overlay {
+  z-index: 5;
+}
+
+.hero-img a {
+  z-index: 7;
 }
 
 .modal-bg,
@@ -588,6 +647,10 @@ body {
 .modal-wrap,
 .navigation-wrap {
   z-index: 10;
+}
+
+.hero-img img {
+  object-fit: cover;
 }
 
 /* 

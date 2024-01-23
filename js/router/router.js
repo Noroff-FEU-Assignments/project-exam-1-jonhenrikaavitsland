@@ -10,7 +10,7 @@ export function router() {
       // do something
       break;
     case "/":
-      // do something
-      break;
+    case "/index.html":
+      return import("../pages/home.js");
   }
 }
