@@ -1,4 +1,4 @@
-import { clearParent } from "../api/data/clearParent.js";
+import { clearParent } from "../data/clearParent.js";
 import { post } from "../render/post/currentPost.js";
 import { postTime } from "../render/post/postTime.js";
 import { renderPost } from "../render/post/renderPost.js";

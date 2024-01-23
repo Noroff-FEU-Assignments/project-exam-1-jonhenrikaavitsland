@@ -1,5 +1,5 @@
-import { domParser } from "../data/domParser.js";
-import { extractInnerHtml } from "../data/extraxctInnerHtml.js";
+import { domParser } from "../../data/domParser.js";
+import { extractInnerHtml } from "../../data/extraxctInnerHtml.js";
 
 export function extractPosts(data) {
   let postsObject = [];

@@ -1,4 +1,4 @@
-import { getId } from "../../api/data/getId.js";
+import { getId } from "../../data/getId.js";
 import { postsObject } from "../../api/fetch/posts.js";
 import { extractCurrentPost } from "./extractCurrentPost.js";
 

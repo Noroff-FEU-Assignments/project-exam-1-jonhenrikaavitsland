@@ -1,4 +1,4 @@
-import { clearParent } from "../api/data/clearParent.js";
+import { clearParent } from "../data/clearParent.js";
 import { mediaObjects } from "../api/fetch/media.js";
 import { renderHero } from "../render/home/renderHero.js";
 import { renderHeroLink } from "../render/home/renderHeroLink.js";
