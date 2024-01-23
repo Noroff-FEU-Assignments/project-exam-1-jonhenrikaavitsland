@@ -377,6 +377,7 @@ footer,
   flex-direction: column;
 }
 
+.mobile-cards-parent,
 .modal-small-container,
 .blog-parent {
   flex-wrap: wrap;
@@ -405,6 +406,8 @@ footer,
   align-items: flex-end;
 }
 
+.link-home-wrap,
+.mobile-cards-parent,
 .hero-bottom,
 .hero-img,
 .aligncenter,
@@ -451,6 +454,7 @@ footer {
   gap: 20px;
 }
 
+.mobile-cards-parent,
 .blog-parent,
 .mobile-nav {
   gap: 30px;
@@ -974,6 +978,7 @@ footer {
   7.  Layout
   */
 
+  .mobile-cards-parent,
   .close-btn-wrap,
   .hide-on-desktop,
   .menu-container {
