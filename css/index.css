@@ -571,9 +571,12 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 
-.card-container,
 .card-bottom-wrap {
   border-radius: 0 0 10px 10px;
+}
+
+.card-container {
+  border-radius: var(--r10);
 }
 
 .post-wrap img,
@@ -1010,6 +1013,18 @@ footer {
 
   .card-excerpt-container {
     height: 250px;
+  }
+
+  .card-img-container img {
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card-bottom-wrap {
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .card-container {
+    border-radius: var(--r20);
   }
 
 
