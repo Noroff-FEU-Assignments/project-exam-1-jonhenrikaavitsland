@@ -1,4 +1,5 @@
-import { renderCards } from "../../blogCard/renderCards.js";
+import { groupsOfTwoPosts } from "../../../api/fetch/posts.js";
+import { renderTwoCards } from "./renderTwoCards.js";
 
 export function renderCarouselElements(posts, media) {
   const carouselParent = document.querySelector(".carousel-container");
@@ -17,14 +18,16 @@ export function renderCarouselElements(posts, media) {
   carouselParent.append(rightBtn);
 
   const containerWrap = document.createElement("div");
-  containerWrap.classList.add("flex", "carousel-card-wrap");
+  containerWrap.classList.add("flex", "slides-wrap");
 
-  const container = document.createElement("div");
-  container.classList.add("carousel-card-container", "flex");
+  for (let i = 0; i < Math.ceil(posts.length / 2); i++) {
+    const slideWrap = document.createElement("div");
+    slideWrap.classList.add(`slide${i + 1}`);
+    containerWrap.append(slideWrap);
 
-  renderCards(posts, media, container);
-
-  containerWrap.append(container);
+    console.log(groupsOfTwoPosts);
+    renderTwoCards(groupsOfTwoPosts[i], media, slideWrap);
+  }
 
   carouselParent.append(containerWrap);
 }
