@@ -1003,7 +1003,10 @@ footer {
     gap: 60px;
   }
 
-  .slide,
+  .slide {
+    gap: 80px;
+  }
+
   .blog-parent {
     gap: 100px;
   }
@@ -1078,6 +1081,10 @@ footer {
 
   .logo-wrap {
     padding: 0;
+  }
+
+  .slide {
+    padding: 0 10px;
   }
   
   footer {
