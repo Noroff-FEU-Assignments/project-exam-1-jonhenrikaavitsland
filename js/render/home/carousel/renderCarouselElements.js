@@ -10,11 +10,16 @@ export function renderCarouselElements(posts, media) {
   carouselParent.append(heading);
 
   const leftBtn = document.createElement("i");
-  leftBtn.classList.add("fa-solid", "fa-circle-caret-left", "fa-2xl");
+  leftBtn.classList.add("fa-solid", "fa-circle-caret-left", "fa-2xl", "cursor");
   carouselParent.append(leftBtn);
 
   const rightBtn = document.createElement("i");
-  rightBtn.classList.add("fa-solid", "fa-circle-caret-right", "fa-2xl");
+  rightBtn.classList.add(
+    "fa-solid",
+    "fa-circle-caret-right",
+    "fa-2xl",
+    "cursor"
+  );
   carouselParent.append(rightBtn);
 
   const containerWrap = document.createElement("div");
@@ -22,7 +27,7 @@ export function renderCarouselElements(posts, media) {
 
   for (let i = 0; i < Math.ceil(posts.length / 2); i++) {
     const slideWrap = document.createElement("div");
-    slideWrap.classList.add(`slide${i + 1}`);
+    slideWrap.classList.add(`slide${i + 1}`, "slide", "flex");
     containerWrap.append(slideWrap);
 
     console.log(groupsOfTwoPosts);
@@ -30,4 +35,8 @@ export function renderCarouselElements(posts, media) {
   }
 
   carouselParent.append(containerWrap);
+
+  const indicators = document.createElement("div");
+  indicators.classList.add("flex", "indicators");
+  carouselParent.append(indicators);
 }
