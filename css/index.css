@@ -314,6 +314,7 @@ nav a:hover {
   box-shadow: 0px 4px 4px 0px var(--blue-major, #1D4289);
 }
 
+.carousel-btn,
 .card-time,
 .cta-card,
 .cta {
@@ -913,6 +914,8 @@ footer {
   /* 
   6.  Flex
   */
+
+  .slide,
   .cta-wrap-about,
   .nav-wrap,
   nav ul {
@@ -937,6 +940,10 @@ footer {
     align-items: flex-end;
   }
 
+  .slide {
+    align-items: center;
+  }
+
   .copyright {
     justify-content: flex-start;
   }
@@ -946,6 +953,7 @@ footer {
     justify-content: flex-end;
   }
 
+  .slide,
   .about-part-2 > div,
   .about-part-3 > div,
   .about-part-4 > div,
@@ -991,6 +999,7 @@ footer {
     display: none;
   }
 
+  .carousel-container,
   nav {
     display: block;
   }
@@ -1040,6 +1049,49 @@ footer {
   8.  Position
   */
 
+  .slider {
+    max-width: 75rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 49rem;
+    transition: transform 1s;
+    background-color: var(--white-major);
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--blue-major);
+  }
+
+
+  .carousel-btn:hover {
+    color: var(--hover);
+    transition: 500ms;
+  }
+
+  .carousel-left-btn {
+    left: 6%;
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-right-btn {
+    right: 6%;
+    transform: translate(50%, -50%);
+  }
+
 
   /* 
   9.  Padding
@@ -1079,9 +1131,15 @@ footer {
     padding: 60px 30px;
   }
 
+  .carousel-container {
+    padding: 60px 0;
+  }
+
   .blog-parent {
     padding: 70px 0;
   }
+
+
 
 
   /* 
@@ -1102,8 +1160,8 @@ footer {
     margin-bottom: 40px;
   }
 
-  .home-main {
-    margin: 0 0 100px 0;
+  .carousel-container h2 {
+    margin: 0 0 40px 0;
   }
 
 

@@ -9,34 +9,36 @@ export function renderCarouselElements(posts, media) {
   heading.classList.add("heading");
   carouselParent.append(heading);
 
-  const leftBtn = document.createElement("i");
-  leftBtn.classList.add("fa-solid", "fa-circle-caret-left", "fa-2xl", "cursor");
-  carouselParent.append(leftBtn);
+  const slider = document.createElement("div");
+  slider.classList.add("slider");
 
-  const rightBtn = document.createElement("i");
-  rightBtn.classList.add(
-    "fa-solid",
-    "fa-circle-caret-right",
-    "fa-2xl",
-    "cursor"
-  );
-  carouselParent.append(rightBtn);
+  const leftBtn = document.createElement("button");
+  leftBtn.classList.add("carousel-btn", "carousel-left-btn");
+  slider.append(leftBtn);
 
-  const containerWrap = document.createElement("div");
-  containerWrap.classList.add("flex", "slides-wrap");
+  const leftIcon = document.createElement("i");
+  leftIcon.classList.add("fa-solid", "fa-circle-caret-left", "fa-2xl");
+  leftBtn.append(leftIcon);
+
+  const rightBtn = document.createElement("button");
+  rightBtn.classList.add("carousel-btn", "carousel-right-btn");
+  slider.append(rightBtn);
+
+  const rightIcon = document.createElement("i");
+  rightIcon.classList.add("fa-solid", "fa-circle-caret-right", "fa-2xl");
+  rightBtn.append(rightIcon);
+
+  const indicators = document.createElement("div");
+  indicators.classList.add("indicators");
+  slider.append(indicators);
 
   for (let i = 0; i < Math.ceil(posts.length / 2); i++) {
     const slideWrap = document.createElement("div");
     slideWrap.classList.add(`slide${i + 1}`, "slide", "flex");
-    containerWrap.append(slideWrap);
+    slider.append(slideWrap);
 
-    console.log(groupsOfTwoPosts);
     renderTwoCards(groupsOfTwoPosts[i], media, slideWrap);
   }
 
-  carouselParent.append(containerWrap);
-
-  const indicators = document.createElement("div");
-  indicators.classList.add("flex", "indicators");
-  carouselParent.append(indicators);
+  carouselParent.append(slider);
 }
