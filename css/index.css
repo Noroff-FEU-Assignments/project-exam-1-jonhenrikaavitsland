@@ -175,6 +175,7 @@ nav {
   line-height: var(--lh-27);
 }
 
+.contact label,
 .heading-socials,
 .hero-bottom h2,
 .post-title,
@@ -189,10 +190,11 @@ nav,
   font-family: var(--ff-lora);
 }
 
-.heading-socials {
-  font-size: var(--s18);
+:placeholder-shown {
+  font-family: var(--ff-merriweather);
 }
 
+.heading-socials,
 .logo-heading {
   font-size: var(--s20);
 }
@@ -208,6 +210,7 @@ nav {
   font-size: var(--s21);
 }
 
+.contact label,
 .heading-socials,
 .heading,
 nav,
@@ -236,6 +239,7 @@ nav,
   font-style: italic
 }
 
+.socials h2,
 .post-time,
 .post-title,
 .cta-view-more,
@@ -397,6 +401,7 @@ footer,
   flex-direction: column;
 }
 
+
 .in-form,
 .mobile-cards-parent,
 .modal-small-container,
@@ -404,6 +409,10 @@ footer,
   flex-wrap: wrap;
 }
 
+.twitter,
+.instagram,
+.tiktok,
+.socials,
 .hero-bottom a,
 .main-post-specific article,
 .cta-card,
@@ -468,6 +477,12 @@ footer {
   gap: 6px;
 }
 
+.twitter,
+.instagram,
+.tiktok {
+  gap: 14px;
+}
+
 .contact form,
 .post-wrap article div,
 .about-part-4 section,
@@ -485,6 +500,7 @@ footer {
   gap: 30px;
 }
 
+.socials,
 .post-wrap {
   gap: 40px;
 }
@@ -629,6 +645,11 @@ footer {
   aspect-ratio: 16 / 6;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 
 /* 
 8.  Position
@@ -709,6 +730,9 @@ footer {
   padding: 5px 0;
 }
 
+.twitter a,
+.instagram a,
+.tiktok a,
 .link-container a {
   padding: 5px;
 }
@@ -766,6 +790,10 @@ footer {
 .mobile-cards-parent,
 .post-wrap {
   padding: 40px 20px;
+}
+
+.socials {
+  padding: 50px 100px;
 }
 
 
@@ -835,6 +863,17 @@ footer {
 /* 
 12. @media
 */
+
+@media (min-width: 600px) {
+  .contact {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact form {
+    width: 540px;
+  }
+}
 
 @media (min-width: 1200px) {
   
@@ -995,6 +1034,7 @@ footer {
     display: flex;
   }
 
+  .contact-main section > div,
   .about-part-1 {
     flex-direction: row;
   }
@@ -1013,6 +1053,7 @@ footer {
     align-items: flex-end;
   }
 
+  .socials > div,
   .slide {
     align-items: center;
   }
@@ -1026,6 +1067,7 @@ footer {
     justify-content: flex-end;
   }
 
+  .socials,
   .slide,
   .about-part-2 > div,
   .about-part-3 > div,
@@ -1034,6 +1076,11 @@ footer {
   .about-part-3 section,
   .about-part-2 section {
     justify-content: center;
+  }
+
+  .contact,
+  .socials {
+    flex: 1;
   }
 
   .hero-bottom a {
@@ -1218,6 +1265,10 @@ footer {
     padding: 30px
   }
 
+  .contact-main section > div {
+    padding: 0 30px 60px 30px;
+  }
+
   .cta-about  {
     padding: 23px 64.6px;
   }
@@ -1230,8 +1281,13 @@ footer {
     padding: 60px 0;
   }
 
+  .contact-main,
   .blog-parent {
     padding: 70px 0;
+  }
+
+  .socials {
+    padding: 50px;
   }
 
 
@@ -1251,12 +1307,17 @@ footer {
     margin: 0 auto;
   }
 
+  .socials h2,
   .post-wrap figure {
     margin-bottom: 30px;
   }
 
   .post-wrap {
     margin-bottom: 40px;
+  }
+
+  .contact-main h1 {
+    margin-bottom: 70px;
   }
 
   .carousel-container h2 {
@@ -1266,6 +1327,7 @@ footer {
   .indicator {
     margin-right: 1.75rem;
   }
+
 
 
   /* 
