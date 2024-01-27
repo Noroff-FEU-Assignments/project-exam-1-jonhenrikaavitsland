@@ -841,42 +841,23 @@ footer {
     background-color: var(--blue-major);
   }
 
-  .fa-circle-caret-left,
-  .fa-circle-caret-right {
-    color: var(--blue-major);
-  }
-
-  .fa-circle-caret-left:hover,
-  .fa-circle-caret-right:hover {
-    color: var(--hover);
-    transition: 500ms;
-  }
-
 
   /* 
   5.  Grid
   */
 
-  .carousel-container,
   footer {
     display: grid;
-  }
-
-  .carousel-container {
-    grid-template-columns: 100px 1000px 100px;
   }
 
   body {
     grid-template-columns: 1fr 1200px 1fr;
   }
 
-  .carousel-container h2,
   footer {
     grid-column: 1 / -1;
   }
 
-  .indicators,
-  .slides-wrap,
   header {
     grid-column: 2 / 3;
   }
@@ -885,7 +866,6 @@ footer {
     grid-column: 1 / 2;
   }
 
-  .fa-circle-caret-right,
   .header-side-2 {
     grid-column: 3 / -1;
   }
@@ -893,11 +873,6 @@ footer {
   .header-side-1,
   .header-side-2 {
     grid-row: 1 / 2;
-  }
-
-  .fa-circle-caret-left,
-  .fa-circle-caret-right {
-    grid-row: 2 / 3;
   }
 
   footer {
@@ -932,12 +907,6 @@ footer {
 
   .post-wrap {
     grid-column: 2 / 3;
-  }
-
-  .fa-circle-caret-left,
-  .fa-circle-caret-right {
-    justify-self: center;
-    align-self: center;
   }
 
 
@@ -1026,10 +995,6 @@ footer {
     display: block;
   }
 
-  .slides-wrap {
-    overflow: hidden;
-  }
-
   .modal-small-container,
   .about-part-2 > div,
   .about-part-3 > div,
@@ -1075,6 +1040,7 @@ footer {
   8.  Position
   */
 
+
   /* 
   9.  Padding
   */
@@ -1083,20 +1049,12 @@ footer {
     padding: 0;
   }
 
-  .slide {
-    padding: 0 10px;
-  }
-  
   footer {
     padding: 0 30px 30px 30px;
   }
 
   .about-part-1 {
     padding: 0 30px 60px 30px;
-  }
-
-  .slides-wrap {
-    padding: 0 0 30px 0;
   }
 
   .about-part-1 section {
@@ -1119,10 +1077,6 @@ footer {
 
   .post-wrap {
     padding: 60px 30px;
-  }
-
-  .carousel-container h2 {
-    padding: 60px 0 30px 0;
   }
 
   .blog-parent {
