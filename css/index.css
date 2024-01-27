@@ -158,6 +158,9 @@ body.modal-open {
 /* 
 3.  Typography
 */
+
+.heading-socials,
+.socials h3,
 .cta,
 .heading,
 nav {
@@ -172,6 +175,7 @@ nav {
   line-height: var(--lh-27);
 }
 
+.heading-socials,
 .hero-bottom h2,
 .post-title,
 .card-time,
@@ -183,6 +187,10 @@ nav {
 nav,
 .logo-wrap {
   font-family: var(--ff-lora);
+}
+
+.heading-socials {
+  font-size: var(--s18);
 }
 
 .logo-heading {
@@ -200,6 +208,7 @@ nav {
   font-size: var(--s21);
 }
 
+.heading-socials,
 .heading,
 nav,
 .logo-heading {
@@ -241,6 +250,7 @@ nav,
   text-align: end;
 }
 
+.heading-socials,
 .heading {
   text-decoration: 3px underline var(--blue-major);
   text-underline-offset: 3px;
@@ -251,6 +261,8 @@ nav,
 4.  Colors
 */
 
+.contact button,
+.contact,
 .about-part-4,
 .about-part-2,
 footer,
@@ -280,6 +292,8 @@ header {
   transition: 500ms;
 }
 
+.contact button,
+.contact label,
 .card-heading,
 .modal-wrap,
 .about-part-4 section,
@@ -291,6 +305,7 @@ nav a {
   color: var(--white-major);
 }
 
+.socials i,
 .post-title,
 .cta-card,
 .cta,
@@ -312,6 +327,10 @@ nav a:hover {
 
 .cta {
   box-shadow: 0px 4px 4px 0px var(--blue-major, #1D4289);
+}
+
+.contact button {
+  box-shadow: 0px 5px 4px 0px #FFF;
 }
 
 .carousel-btn,
@@ -378,6 +397,7 @@ footer,
   flex-direction: column;
 }
 
+.in-form,
 .mobile-cards-parent,
 .modal-small-container,
 .blog-parent {
@@ -407,6 +427,7 @@ footer,
   align-items: flex-end;
 }
 
+.btn-wrap,
 .link-home-wrap,
 .mobile-cards-parent,
 .hero-bottom,
@@ -426,6 +447,7 @@ footer {
   justify-content: flex-end;
 }
 
+.in-form > div,
 .card-bottom-wrap,
 .navigation-wrap {
   justify-content: space-between;
@@ -439,12 +461,14 @@ footer {
   flex: 100%;
 }
 
+.in-form,
 .hero-bottom a,
 .cta-card,
 .copyright {
   gap: 6px;
 }
 
+.contact form,
 .post-wrap article div,
 .about-part-4 section,
 .about-part-3 section,
@@ -476,6 +500,7 @@ footer {
   display: none;
 }
 
+.btn-wrap button,
 .post-wrap img,
 .cursor {
   cursor: pointer;
@@ -485,15 +510,24 @@ footer {
   height: 20px;
 }
 
+.contact input {
+  height: 38px;
+}
+
 .close-modal {
   height: 50px;
   width: 50px;
+}
+
+.contact textarea {
+  height: 127px;
 }
 
 .card-overlay {
   height: 150px;
 }
 
+.hero-overlay,
 .modal-bg,
 .modal-container,
 .overlay {
@@ -518,10 +552,6 @@ footer {
 
 .heading-wrap {
   width: max-content
-}
-
-.hero-overlay {
-  height: 100%;
 }
 
 .about-part-4 > div,
@@ -566,6 +596,7 @@ footer {
   width: 200px;
 }
 
+.contact button,
 .cta-view-more {
   border: 0;
 }
@@ -578,6 +609,8 @@ footer {
   border-radius: 0 0 10px 10px;
 }
 
+.contact input,
+.contact textarea,
 .card-container {
   border-radius: var(--r10);
 }
@@ -656,6 +689,10 @@ body {
 9.  Padding
 */
 
+.contact input {
+  padding: 0 10px;
+}
+
 footer {
   padding: 0 20px 20px 20px;
 }
@@ -676,6 +713,7 @@ footer {
   padding: 5px;
 }
 
+.contact textarea,
 .navigation-wrap,
 .close-btn-wrap,
 .menu-container,
@@ -710,10 +748,15 @@ footer {
   padding: 20px 20px 40px 20px;
 }
 
+.contact {
+  padding: 20px 20px 80px 20px;
+}
+
 .cta {
   padding: 23px 36px;
 }
 
+.contact-main,
 .blog-parent,
 .main-blog,
 .about-main {
@@ -760,6 +803,11 @@ footer {
   margin-bottom: 20px;
 }
 
+.contact-main h1 {
+  margin-bottom: 30px;
+}
+
+.btn-wrap,
 .post-parent-1,
 .cta-view-more {
   margin-top: 20px;
