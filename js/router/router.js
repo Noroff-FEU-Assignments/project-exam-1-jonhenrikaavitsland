@@ -7,8 +7,7 @@ export function router() {
     case "/about/":
       return import("../pages/about.js");
     case "/contact/":
-      // do something
-      break;
+      return import("../pages/contact.js");
     case "/":
     case "/index.html":
       return import("../pages/home.js");
