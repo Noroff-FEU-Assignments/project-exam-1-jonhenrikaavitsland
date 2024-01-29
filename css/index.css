@@ -175,6 +175,7 @@ nav {
   line-height: var(--lh-27);
 }
 
+.validate-msg,
 .contact label,
 .heading-socials,
 .hero-bottom h2,
@@ -210,6 +211,7 @@ nav {
   font-size: var(--s21);
 }
 
+.validate-msg,
 .contact label,
 .heading-socials,
 .heading,
@@ -287,6 +289,7 @@ header {
   background-color: var(--black-major);
 }
 
+.contact-error,
 .cta {
   background-color: var(--white-major);
 }
@@ -309,6 +312,7 @@ nav a {
   color: var(--white-major);
 }
 
+.validate-msg,
 .socials i,
 .post-title,
 .cta-card,
@@ -335,6 +339,11 @@ nav a:hover {
 
 .contact button {
   box-shadow: 0px 5px 4px 0px #FFF;
+}
+
+.contact input,
+.contact textarea {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .carousel-btn,
@@ -641,6 +650,11 @@ footer {
   border-radius: 200px;
 }
 
+.contact-error {
+  border-radius: 50px 0 50px 0;
+  border: 3px solid red;
+}
+
 .hero-img img {
   aspect-ratio: 16 / 6;
 }
@@ -724,6 +738,10 @@ footer {
 
 .hero-bottom {
   padding: 0 0 20px 0;
+}
+
+.contact-error {
+  padding: 0 20px;
 }
 
 .mobile-nav a {

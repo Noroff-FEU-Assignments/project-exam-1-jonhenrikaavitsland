@@ -69,28 +69,36 @@
             <div class="flex flex-col in-form">
               <div class="flex">
                 <label for="name">Name:</label>
-                <div class="contact-error"></div>
+                <div class="contact-error name-error hidden">
+                  <p class="validate-msg"></p>
+                </div>
               </div>
               <input type="text" id="name" name="name" placeholder="Your name" required>  
             </div>
             <div class="flex flex-col in-form">
               <div class="flex">
                 <label for="email">E-mail address:</label>
-                <div class="contact-error"></div>
+                <div class="contact-error email-error hidden">
+                  <p class="validate-msg"></p>
+                </div>
               </div>
               <input type="text" name="email" id="email" placeholder="Your email" required>
             </div>
             <div class="flex flex-col in-form">
               <div class="flex">
                 <label for="subject">Subject:</label>
-                <div class="contact-error"></div>
+                <div class="contact-error subject-error hidden">
+                  <p class="validate-msg"></p>
+                </div>
               </div>
               <input type="text" id="subject" name="subject" placeholder="Your subject" required>
             </div>
             <div class="flex flex-col in-form">
               <div class="flex">
                 <label for="message">Message:</label>
-                <div class="contact-error"></div>
+                <div class="contact-error msg-error hidden">
+                  <p class="validate-msg"></p>
+                </div>
               </div>
               <textarea id="message" name="message" placeholder="What can Keeper Evans do for you?" required></textarea>
             </div>
