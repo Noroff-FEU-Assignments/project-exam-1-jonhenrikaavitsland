@@ -193,6 +193,11 @@ nav,
 
 :placeholder-shown {
   font-family: var(--ff-merriweather);
+  font-size: 14px
+}
+
+.validate-msg {
+  font-size: 12px;
 }
 
 .heading-socials,
@@ -261,7 +266,6 @@ nav,
   text-decoration: 3px underline var(--blue-major);
   text-underline-offset: 3px;
 }
-
 
 /* 
 4.  Colors
@@ -418,6 +422,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.error-container,
 .twitter,
 .instagram,
 .tiktok,
@@ -479,6 +484,7 @@ footer {
   flex: 100%;
 }
 
+.contact form,
 .in-form,
 .hero-bottom a,
 .cta-card,
@@ -492,7 +498,6 @@ footer {
   gap: 14px;
 }
 
-.contact form,
 .post-wrap article div,
 .about-part-4 section,
 .about-part-3 section,
@@ -533,6 +538,10 @@ footer {
 
 .copyright {
   height: 20px;
+}
+
+.error-container {
+  height: 25px;
 }
 
 .contact input {
@@ -652,7 +661,6 @@ footer {
 
 .contact-error {
   border-radius: 50px 0 50px 0;
-  border: 3px solid red;
 }
 
 .hero-img img {

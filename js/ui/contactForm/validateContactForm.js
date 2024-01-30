@@ -1,56 +1,26 @@
-const nameField = document.querySelector("#name");
-console.log(nameField);
-const emailField = document.querySelector("#email");
-console.log(emailField);
-const subjectField = document.querySelector("#subject");
-console.log(subjectField);
-const msgField = document.querySelector("#message");
-console.log(msgField);
-const nameError = document.querySelector(".name-error");
-console.log(nameError);
-const nameErrorMsg = document.querySelector(".name-error p");
-const emailError = document.querySelector(".email-error");
-console.log(emailError);
-const emailErrorMsg = document.querySelector(".email-error p");
-console.log(emailErrorMsg);
-const subjectError = document.querySelector(".subject-error");
-console.log(subjectError);
-const msgError = document.querySelector(".msg-error");
-console.log(msgError);
+import { formSubmitListener } from "./formSubmitListener.js";
+import { validateEmail } from "./validateEmail.js";
+import { validateMsg } from "./validateMsg.js";
+import { validateName } from "./validateName.js";
+import { validateSubject } from "./validateSubject.js";
 
 export function validateContactForm() {
-  let validState = true;
+  const nameRegex = /^[a-zA-Z\s\-']+$/;
+  const emailRegex = /^\S+@\S+\.\S{2,}$/;
+  const textRegex = /^[a-zA-Z0-9\s.,!?'"()-]+$/;
+  let validState;
 
-  validateName();
-  validateEmail();
+  const validStateName = validateName(nameRegex);
+  const validStateEmail = validateEmail(emailRegex);
+  const validStateSubject = validateSubject(textRegex);
+  const validStateMsg = validateMsg(textRegex);
 
-  function validateName() {
-    if (nameField.value.trim() === "") {
-      nameError.classList.remove("hidden");
-      nameErrorMsg.textContent = "Please enter your name.";
-      nameError.style.borderColor = "orange";
-      validState = false;
-    } else {
-      nameError.classList.add("hidden");
-    }
+  if (validStateName && validStateEmail && validStateSubject && validStateMsg) {
+    validState = true;
+  } else {
+    validState = false;
   }
+  console.log(validState);
 
-  function validateEmail() {
-    const emailRegex = /^\S+@\S+\.\S{2,}$/;
-    if (emailField.value.trim() === "") {
-      emailError.classList.remove("hidden");
-      emailErrorMsg.textContent = "Please enter your email.";
-      emailError.style.borderColor = "orange";
-      validState = false;
-    } else {
-      if (!emailRegex.test(emailField.value.trim())) {
-        emailError.classList.remove("hidden");
-        emailErrorMsg.textContent = "Please enter a valid email address!";
-        emailError.style.borderColor = "red";
-        validState = false;
-      } else {
-        emailError.classList.add("hidden");
-      }
-    }
-  }
+  formSubmitListener(validState);
 }
