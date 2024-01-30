@@ -167,6 +167,7 @@ nav {
   text-transform: uppercase;
 }
 
+.contact label,
 nav {
   line-height: var(--lh-1);
 }
@@ -422,7 +423,6 @@ footer,
   flex-wrap: wrap;
 }
 
-.error-container,
 .twitter,
 .instagram,
 .tiktok,
@@ -441,6 +441,10 @@ footer,
 .about-main,
 .copyright {
   align-items: center;
+}
+
+.error-container {
+  align-items: flex-start;
 }
 
 .card-overlay,
@@ -470,7 +474,6 @@ footer {
   justify-content: flex-end;
 }
 
-.in-form > div,
 .card-bottom-wrap,
 .navigation-wrap {
   justify-content: space-between;
@@ -484,8 +487,6 @@ footer {
   flex: 100%;
 }
 
-.contact form,
-.in-form,
 .hero-bottom a,
 .cta-card,
 .copyright {
@@ -541,7 +542,8 @@ footer {
 }
 
 .error-container {
-  height: 25px;
+  min-height: 36px;
+  max-height: 55px;
 }
 
 .contact input {
@@ -660,7 +662,7 @@ footer {
 }
 
 .contact-error {
-  border-radius: 50px 0 50px 0;
+  border-radius: 0 0 20px 20px;
 }
 
 .hero-img img {
@@ -839,6 +841,10 @@ footer {
 
 .about-main .cta {
   margin: 50px 0 0 0;
+}
+
+.contact label {
+  margin-bottom: 5px;
 }
 
 .about-part-4 h2,

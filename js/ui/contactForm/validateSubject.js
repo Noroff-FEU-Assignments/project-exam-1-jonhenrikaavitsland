@@ -4,12 +4,15 @@ export function validateSubject(subjectRegex) {
   const subjectErrorMsg = document.querySelector(".subject-error p");
   let validState = false;
 
+  const trimmedSubject = subjectField.value.trim();
+
   if (
-    subjectField.value.trim() !== "" &&
-    !subjectRegex.test(subjectField.value)
+    trimmedSubject !== "" &&
+    (trimmedSubject.length < 16 || !subjectRegex.test(subjectField.value))
   ) {
     subjectError.classList.remove("hidden");
-    subjectErrorMsg.textContent = "That doesn't make sense!";
+    subjectErrorMsg.textContent =
+      "Subject needs to be more than 15 characters and not include unwanted characters!";
     subjectField.style.border = "2px solid red";
     validState = false;
   } else {
@@ -17,7 +20,7 @@ export function validateSubject(subjectRegex) {
     subjectField.style.border = "";
     validState = true;
   }
-  if (subjectField.value.trim() === "") {
+  if (trimmedSubject === "") {
     validState = false;
   }
   return validState;

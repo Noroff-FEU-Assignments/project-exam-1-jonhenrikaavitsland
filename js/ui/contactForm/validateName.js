@@ -4,9 +4,15 @@ export function validateName(nameRegex) {
   const nameErrorMsg = document.querySelector(".name-error p");
   let validState = false;
 
-  if (nameField.value.trim() !== "" && !nameRegex.test(nameField.value)) {
+  const trimmedName = nameField.value.trim();
+
+  if (
+    trimmedName !== "" &&
+    (trimmedName.length < 6 || !nameRegex.test(nameField.value))
+  ) {
     nameError.classList.remove("hidden");
-    nameErrorMsg.textContent = "Unwanted characters in name";
+    nameErrorMsg.textContent =
+      "Name should be more than 5 characters and contain no unwanted characters!";
     nameField.style.border = "2px solid red";
     validState = false;
   } else {
@@ -14,7 +20,7 @@ export function validateName(nameRegex) {
     nameField.style.border = "";
     validState = true;
   }
-  if (nameField.value.trim() === "") {
+  if (trimmedName === "") {
     validState = false;
   }
   return validState;

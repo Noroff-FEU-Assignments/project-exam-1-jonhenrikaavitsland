@@ -4,9 +4,15 @@ export function validateMsg(msgRegex) {
   const msgErrorMsg = document.querySelector(".msg-error p");
   let validState = false;
 
-  if (msgField.value.trim() !== "" && !msgRegex.test(msgField.value)) {
+  const trimmedMsg = msgField.value.trim();
+
+  if (
+    trimmedMsg !== "" &&
+    (trimmedMsg < 26 || !msgRegex.test(msgField.value))
+  ) {
     msgError.classList.remove("hidden");
-    msgErrorMsg.textContent = "That doesn't make sense!";
+    msgErrorMsg.textContent =
+      "Message needs to be longer than 26 characters and not include unwanted characters!";
     msgField.style.border = "2px solid red";
     validState = false;
   } else {
@@ -14,7 +20,7 @@ export function validateMsg(msgRegex) {
     msgField.style.border = "";
     validState = true;
   }
-  if (msgField.value.trim() === "") {
+  if (trimmedMsg === "") {
     validState = false;
   }
   return validState;
