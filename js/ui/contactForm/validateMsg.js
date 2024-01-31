@@ -8,7 +8,7 @@ export function validateMsg(msgRegex) {
 
   if (
     trimmedMsg !== "" &&
-    (trimmedMsg < 26 || !msgRegex.test(msgField.value))
+    (trimmedMsg.length < 26 || !msgRegex.test(msgField.value))
   ) {
     msgError.classList.remove("hidden");
     msgErrorMsg.textContent =
