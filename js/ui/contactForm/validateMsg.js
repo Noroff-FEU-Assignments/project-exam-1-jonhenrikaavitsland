@@ -12,7 +12,7 @@ export function validateMsg(msgRegex) {
   ) {
     msgError.classList.remove("hidden");
     msgErrorMsg.textContent =
-      "Message needs to be longer than 26 characters and not include unwanted characters!";
+      "Message needs to be longer than 25 characters and not include unwanted characters!";
     msgField.style.border = "2px solid red";
     validState = false;
   } else {
