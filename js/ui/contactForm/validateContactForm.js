@@ -20,7 +20,6 @@ export function validateContactForm() {
   } else {
     validState = false;
   }
-  console.log(validState);
 
   formSubmitListener(validState);
 }
