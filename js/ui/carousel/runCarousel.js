@@ -1,3 +1,4 @@
+import { ERROR_NO_PARENT } from "../../errorHandling/errors.js";
 import { getIndicators } from "../../render/home/carousel/getIndicators.js";
 import { activeIndicator } from "./activeIndicator.js";
 import { goToPosition } from "./goToPosition.js";
@@ -7,6 +8,9 @@ export function runCarousel() {
   const btnLeft = document.querySelector(".carousel-left-btn");
   const btnRight = document.querySelector(".carousel-right-btn");
   const indicatorParent = document.querySelector(".indicators");
+
+  if (!slides || !indicatorParent || !btnLeft || !btnRight)
+    throw ERROR_NO_PARENT;
 
   getIndicators(slides, indicatorParent);
 

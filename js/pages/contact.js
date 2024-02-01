@@ -5,3 +5,4 @@ import { validateContactForm } from "../ui/contactForm/validateContactForm.js";
 formPreventDefault();
 validateContactForm();
 updateValidation();
+

@@ -1,5 +1,12 @@
+import { ERROR_NO_MEDIA, ERROR_NO_PARENT } from "../../errorHandling/errors.js";
+
 export function renderHero(images) {
+  if (!images) throw ERROR_NO_MEDIA;
+
   const parent = document.querySelector(".hero-img");
+
+  if (!parent) throw ERROR_NO_PARENT;
+
   console.log(images[0]);
   for (let i = 0; i < images.length; i++) {
     if (images[i].id === "134") {

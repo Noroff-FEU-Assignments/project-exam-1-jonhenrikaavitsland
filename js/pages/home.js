@@ -7,6 +7,7 @@ import { fourPosts, postsObject } from "../api/fetch/posts.js";
 import { renderViewMoreLink } from "../render/home/renderViewMoreLink.js";
 import { renderCarouselElements } from "../render/home/carousel/renderCarouselElements.js";
 import { runCarousel } from "../ui/carousel/runCarousel.js";
+import { renderError } from "../errorHandling/renderError.js";
 
 const heroParent = document.querySelector(".hero-img");
 const cardParent = document.querySelector(".mobile-cards-parent");
@@ -15,11 +16,17 @@ try {
   clearParent(heroParent);
   renderHero(mediaObjects);
   renderHeroLink();
+} catch (error) {
+  renderError(error, heroParent);
+  console.log(error);
+}
+
+try {
   renderCards(fourPosts, mediaObjects, cardParent);
   renderViewMoreLink(cardParent);
   renderCarouselElements(postsObject, mediaObjects);
   runCarousel();
 } catch (error) {
-  console.log(error);
+  renderError(error, cardParent);
+  console.log("Oops! Something went wrong!", error);
 }
-

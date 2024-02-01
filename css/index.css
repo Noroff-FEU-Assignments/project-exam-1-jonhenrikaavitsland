@@ -176,6 +176,7 @@ nav {
   line-height: var(--lh-27);
 }
 
+.error,
 .validate-msg,
 .contact label,
 .heading-socials,
@@ -197,6 +198,7 @@ nav,
   font-size: 14px
 }
 
+.error,
 .validate-msg {
   font-size: 12px;
 }
@@ -226,6 +228,7 @@ nav,
   font-weight: var(--w5);
 }
 
+.error,
 .cta {
   font-weight: var(--w6);
 }
@@ -294,6 +297,7 @@ header {
   background-color: var(--black-major);
 }
 
+.error,
 .contact-error,
 .cta {
   background-color: var(--white-major);
@@ -336,6 +340,10 @@ nav a {
 nav a:hover {
   color: var(--hover);
   transition: 500ms;
+}
+
+.error {
+  color: red;
 }
 
 .cta {
@@ -637,6 +645,10 @@ footer {
   border: 0;
 }
 
+.error {
+  border: 2px solid red;
+}
+
 .card-img-container img {
   border-radius: 10px 10px 0 0;
 }
@@ -651,6 +663,7 @@ footer {
   border-radius: var(--r10);
 }
 
+.error,
 .post-wrap img,
 .about-img,
 .cta {
@@ -765,6 +778,7 @@ footer {
   padding: 5px;
 }
 
+.error,
 .contact textarea,
 .navigation-wrap,
 .close-btn-wrap,

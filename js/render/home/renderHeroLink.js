@@ -1,5 +1,9 @@
+import { ERROR_NO_PARENT } from "../../errorHandling/errors.js";
+
 export function renderHeroLink() {
   const parent = document.querySelector(".hero-bottom");
+
+  if (!parent) throw ERROR_NO_PARENT;
 
   const link = document.createElement("a");
   link.classList.add("flex");

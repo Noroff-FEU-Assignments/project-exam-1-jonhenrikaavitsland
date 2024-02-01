@@ -1,8 +1,18 @@
 import { groupsOfTwoPosts } from "../../../api/fetch/posts.js";
+import {
+  ERROR_NO_DATA,
+  ERROR_NO_MEDIA,
+  ERROR_NO_PARENT,
+} from "../../../errorHandling/errors.js";
 import { renderTwoCards } from "./renderTwoCards.js";
 
 export function renderCarouselElements(posts, media) {
+  if (!posts) throw ERROR_NO_DATA;
+  if (!media) throw ERROR_NO_MEDIA;
+
   const carouselParent = document.querySelector(".carousel-container");
+
+  if (!carouselParent) throw ERROR_NO_PARENT;
 
   const heading = document.createElement("h2");
   heading.textContent = "Latest Posts";
