@@ -154,6 +154,19 @@ body.modal-open {
 }
 /* End of loader code referenced above */
 
+/* The following code is hiding the content for regular users but keeping it accessible. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background-color: transparent;
+  color: transparent;
+}
+
 
 /* 
 3.  Typography

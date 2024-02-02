@@ -1,4 +1,5 @@
 import { groupsOfTwoPosts } from "../../../api/fetch/posts.js";
+import { createHiddenSpan } from "../../../errorHandling/createHiddenSpan.js";
 import {
   ERROR_NO_DATA,
   ERROR_NO_MEDIA,
@@ -30,6 +31,9 @@ export function renderCarouselElements(posts, media) {
   leftIcon.classList.add("fa-solid", "fa-circle-caret-left", "fa-2xl");
   leftBtn.append(leftIcon);
 
+  const leftHiddenSpan = createHiddenSpan("1-left");
+  leftBtn.append(leftHiddenSpan);
+
   const rightBtn = document.createElement("button");
   rightBtn.classList.add("carousel-btn", "carousel-right-btn");
   slider.append(rightBtn);
@@ -37,6 +41,9 @@ export function renderCarouselElements(posts, media) {
   const rightIcon = document.createElement("i");
   rightIcon.classList.add("fa-solid", "fa-circle-caret-right", "fa-2xl");
   rightBtn.append(rightIcon);
+
+  const rightHiddenSpan = createHiddenSpan("1-right");
+  rightBtn.append(rightHiddenSpan);
 
   const indicators = document.createElement("div");
   indicators.classList.add("indicators");
