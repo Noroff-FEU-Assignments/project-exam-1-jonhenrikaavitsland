@@ -591,6 +591,8 @@ footer {
   height: 100%;
 }
 
+.contact input,
+.contact textarea,
 .hero-bottom,
 .hero-overlay,
 .card-overlay,
