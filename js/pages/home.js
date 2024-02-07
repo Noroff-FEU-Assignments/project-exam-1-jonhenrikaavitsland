@@ -20,7 +20,7 @@ try {
   makeHeroRedirect();
 } catch (error) {
   renderError(error, heroParent);
-  console.log(error);
+  console.log("Oops! Something went wrong!", error);
 }
 
 try {

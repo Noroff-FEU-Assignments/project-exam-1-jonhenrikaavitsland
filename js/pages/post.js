@@ -25,15 +25,12 @@ try {
 }
 
 try {
+  clearParent(parent1);
   renderH1(post);
   postTime(post, timeParent);
-  clearParent(parent1);
   renderPost(postObject[0], parent1);
-  clearParent(parent2);
   renderPost(postObject[1], parent2);
-  clearParent(parent3);
   renderPost(postObject[2], parent3);
-  clearParent(parent4);
   renderPost(postObject[3], parent4);
 } catch (error) {
   renderError(error, errorParent);

@@ -11,11 +11,20 @@ const mainParent = document.querySelector("main");
 try {
   clearParent(profileImgParent);
   renderProfileImage(mediaObjects, profileImgParent);
-  renderAboutImages(mediaObjects);
 } catch (error) {
   renderError(error, profileImgParent);
   console.log(
     "Oops! it looks like something went wrong when attempting to fetch and display the profile-img.",
+    error
+  );
+}
+
+try {
+  renderAboutImages(mediaObjects);
+} catch (error) {
+  renderError(error, profileImgParent);
+  console.log(
+    "Oops! it looks like something went wrong when attempting to fetch and display the images",
     error
   );
 }
