@@ -1,10 +1,12 @@
+import { redirect } from "../../redirect/redirect.js";
+
 export function createCard(post, media) {
   const linkUrl = `/blog/post/?id=${post.id}`;
 
   const element = document.createElement("div");
   element.classList.add("card-container", "cursor");
   element.addEventListener("click", function () {
-    window.location.href = linkUrl;
+    redirect(linkUrl);
   });
 
   const imageContainer = document.createElement("div");
