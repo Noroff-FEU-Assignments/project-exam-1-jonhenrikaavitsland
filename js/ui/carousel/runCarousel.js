@@ -52,4 +52,28 @@ export function runCarousel() {
     goToPosition(slides, currentPosition);
     activeIndicator(currentPosition);
   }
+
+  indicatorParent.addEventListener("click", function (e) {
+    if (e.target.classList.contains("indicator1")) {
+      currentPosition = 0;
+      goToPosition(slides, currentPosition);
+      activeIndicator(currentPosition);
+    } else if (e.target.classList.contains("indicator2")) {
+      currentPosition = 1;
+      goToPosition(slides, currentPosition);
+      activeIndicator(currentPosition);
+    } else if (e.target.classList.contains("indicator3")) {
+      currentPosition = 2;
+      goToPosition(slides, currentPosition);
+      activeIndicator(currentPosition);
+    } else if (e.target.classList.contains("indicator4")) {
+      currentPosition = 3;
+      goToPosition(slides, currentPosition);
+      activeIndicator(currentPosition);
+    } else if (e.target.classList.contains("indicator5")) {
+      currentPosition = 4;
+      goToPosition(slides, currentPosition);
+      activeIndicator(currentPosition);
+    }
+  });
 }
