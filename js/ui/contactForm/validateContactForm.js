@@ -5,9 +5,9 @@ import { validateName } from "./validateName.js";
 import { validateSubject } from "./validateSubject.js";
 
 export function validateContactForm() {
-  const nameRegex = /^[a-zA-Z\s\-']+$/;
+  const nameRegex = /^[a-zA-ZæøåÆØÅ\s\-']+$/;
   const emailRegex = /^\S+@\S+\.\S{2,}$/;
-  const textRegex = /^[a-zA-Z0-9\s.,!?'"()-]+$/;
+  const textRegex = /^[a-zA-Z0-9æøåÆØÅ\s.,!?'"()-]+$/;
   let validState;
 
   const validStateName = validateName(nameRegex);
