@@ -1,4 +1,4 @@
-export function getLastID(id, posts) {
+export function getLastId(id, posts) {
   let lastId = 0;
   for (let i = 0; i < posts.length; i++) {
     if (id === posts[i].id && posts[i + 1]) {
