@@ -576,6 +576,10 @@ footer {
   width: 50px;
 }
 
+.link-prev-next img {
+  height: 100px;
+}
+
 .contact textarea {
   height: 127px;
 }

@@ -5,6 +5,7 @@ import { createObject } from "./createObject.js";
 import { findFeaturedImage } from "./findFeaturedImage.js";
 import { getLastId } from "./getLastId.js";
 import { getNextId } from "./getNextId.js";
+import { renderLink } from "./renderLink.js";
 
 export function viewNextOrPrevious(parent, media, posts) {
   console.log(media);
@@ -27,7 +28,8 @@ export function viewNextOrPrevious(parent, media, posts) {
   if (isLastPost) {
     lastId = getLastId(id, posts);
     lastImgId = findFeaturedImage(lastId, posts);
-    lastObject = createObject(media, lastImgId, posts, lastId, "older");
+    lastObject = createObject(media, lastImgId, posts, lastId, "previous");
+    renderLink(parent, lastObject);
     console.log("lastId:", lastId);
     console.log("lastImgId:", lastImgId);
     console.log("lastObject:", lastObject);
@@ -40,12 +42,14 @@ export function viewNextOrPrevious(parent, media, posts) {
   if (isNextPost) {
     nextId = getNextId(id, posts);
     nextImgId = findFeaturedImage(nextId, posts);
-    nextObject = createObject(media, nextImgId, posts, nextId, "newer");
+    nextObject = createObject(media, nextImgId, posts, nextId, "next");
+    renderLink(parent, nextObject);
     console.log("nextId:", nextId);
     console.log("nextImgId:", nextImgId);
     console.log("nextObject:", nextObject);
   }
 }
+
 
 
 
