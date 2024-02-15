@@ -21,20 +21,6 @@ export function viewNextOrPrevious(parent, media, posts) {
   const isNextPost = checkIfNextExist(id, posts);
   console.log("isNext:", isNextPost);
 
-  // If the post is not oldest, this variable holds the id of the previous post.
-  let lastId;
-  let lastImgId; /* The id of the featured img for the previous post */
-  let lastObject; /* Contains the object to render */
-  if (isLastPost) {
-    lastId = getLastId(id, posts);
-    lastImgId = findFeaturedImage(lastId, posts);
-    lastObject = createObject(media, lastImgId, posts, lastId, "previous");
-    renderLink(parent, lastObject);
-    console.log("lastId:", lastId);
-    console.log("lastImgId:", lastImgId);
-    console.log("lastObject:", lastObject);
-  }
-
   // If the post is not newest, this variable holds the id of the next post that is newer than the current one.
   let nextId;
   let nextImgId; /* The id of the featured img for the newer post */
@@ -47,6 +33,20 @@ export function viewNextOrPrevious(parent, media, posts) {
     console.log("nextId:", nextId);
     console.log("nextImgId:", nextImgId);
     console.log("nextObject:", nextObject);
+  }
+
+  // If the post is not oldest, this variable holds the id of the previous post.
+  let lastId;
+  let lastImgId; /* The id of the featured img for the previous post */
+  let lastObject; /* Contains the object to render */
+  if (isLastPost) {
+    lastId = getLastId(id, posts);
+    lastImgId = findFeaturedImage(lastId, posts);
+    lastObject = createObject(media, lastImgId, posts, lastId, "previous");
+    renderLink(parent, lastObject);
+    console.log("lastId:", lastId);
+    console.log("lastImgId:", lastImgId);
+    console.log("lastObject:", lastObject);
   }
 }
 

@@ -17,7 +17,7 @@ export function displayModal() {
   document.body.addEventListener("click", function (event) {
     const target = event.target;
 
-    if (target.tagName === "IMG") {
+    if (target.tagName === "IMG" && !target.classList.contains("no-modal")) {
       clickedImg = target.src.replace(/-300x300/, "");
 
       if (location.pathname === "/about/") {
