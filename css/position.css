@@ -1,0 +1,54 @@
+/* 
+8.  Position
+*/
+
+.hero-img img,
+.hero-img,
+.card-img-container,
+header,
+body {
+  position: relative;
+}
+
+.hero-overlay,
+.card-overlay,
+.modal-container,
+.navigation-wrap,
+.modal-bg,
+.overlay {
+  position: absolute;
+}
+
+.modal-bg,
+.overlay,
+.navigation-wrap {
+  right: 0px;
+}
+
+.hero-overlay,
+.card-overlay {
+  bottom: 0px;
+  left: 0px;
+}
+
+.hero-img {
+  z-index: 1;
+}
+
+.hero-overlay {
+  z-index: 5;
+}
+
+.modal-bg,
+.overlay {
+  z-index: 9;
+}
+
+.modal-wrap,
+.navigation-wrap {
+  z-index: 10;
+}
+
+.hero-img img {
+  object-fit: cover;
+}

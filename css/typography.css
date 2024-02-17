@@ -1,0 +1,127 @@
+/* 
+3.  Typography
+*/
+
+.link-prev-next a,
+.link-prev-next h2, 
+.heading-socials,
+.socials h3,
+.cta,
+.heading,
+nav {
+  text-transform: uppercase;
+}
+
+.contact label,
+nav {
+  line-height: var(--lh-1);
+}
+
+.heading {
+  line-height: var(--lh-27);
+}
+
+.link-prev-next h3,
+.link-prev-next h2,
+.error,
+.validate-msg,
+.contact label,
+.heading-socials,
+.hero-bottom h2,
+.post-title,
+.card-time,
+.card-heading,
+.cta,
+.blog-heading-white,
+.blog-heading,
+.heading,
+nav,
+.logo-wrap {
+  font-family: var(--ff-lora);
+}
+
+.link-prev-next a,
+:placeholder-shown {
+  font-family: var(--ff-merriweather);
+  font-size: 14px
+}
+
+.error,
+.validate-msg {
+  font-size: 12px;
+}
+
+.link-prev-next h2 {
+  font-size: var(--s16);
+}
+
+.heading-socials,
+.logo-heading {
+  font-size: var(--s20);
+}
+
+.hero-bottom h2,
+.post-title,
+.card-heading,
+.cta,
+.blog-heading-white,
+.blog-heading,
+.heading,
+nav {
+  font-size: var(--s21);
+}
+
+.validate-msg,
+.contact label,
+.heading-socials,
+.heading,
+nav,
+.logo-heading {
+  font-weight: var(--w5);
+}
+
+.link-prev-next h2,
+.error,
+.cta {
+  font-weight: var(--w6);
+}
+
+.link-prev-next h3,
+.hero-bottom h2,
+.post-title,
+.card-heading,
+.blog-heading-white,
+.blog-heading,
+.logo-p {
+  font-weight: var(--w7);
+}
+
+.link-prev-next h3,
+.post-title,
+.card-heading,
+.blog-heading-white,
+.blog-heading,
+.logo-p {
+  font-style: italic
+}
+
+.socials h2,
+.post-time,
+.post-title,
+.cta-view-more,
+.cta,
+.blog-heading-white,
+.blog-heading,
+.heading {
+  text-align: center;
+}
+
+.navigation-wrap {
+  text-align: end;
+}
+
+.heading-socials,
+.heading {
+  text-decoration: 3px underline var(--blue-major);
+  text-underline-offset: 3px;
+}

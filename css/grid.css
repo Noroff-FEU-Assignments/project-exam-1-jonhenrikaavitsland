@@ -1,0 +1,21 @@
+/* 
+5.  Grid
+*/
+
+.main-post-specific,
+.about-part-4,
+.about-part-3,
+.about-part-2 {
+  display: grid;
+}
+
+.about-part-4 > div,
+.about-part-2 > div {
+  grid-row: 1 / 2;
+}
+
+.about-part-4,
+.about-part-3,
+.about-part-2 {
+  justify-items: center;
+}

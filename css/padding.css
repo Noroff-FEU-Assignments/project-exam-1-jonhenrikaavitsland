@@ -1,0 +1,95 @@
+/* 
+9.  Padding
+*/
+
+.contact input {
+  padding: 0 10px;
+}
+
+footer {
+  padding: 0 20px 20px 20px;
+}
+
+.about-part-1 {
+  padding: 0 20px 40px 20px;
+}
+
+.hero-bottom {
+  padding: 0 0 20px 0;
+}
+
+.contact-error {
+  padding: 0 20px;
+}
+
+.mobile-nav a {
+  padding: 5px 0;
+}
+
+.twitter a,
+.instagram a,
+.tiktok a,
+.link-container a {
+  padding: 5px;
+}
+
+.link-prev-next,
+.error,
+.contact textarea,
+.navigation-wrap,
+.close-btn-wrap,
+.menu-container,
+.menu-wrap {
+  padding: 10px;
+}
+
+.mobile-nav {
+  padding: 10px 10px 10px 0;
+}
+
+.card-bottom-wrap {
+  padding: 10px 20px 20px 20px;
+}
+
+.card-excerpt-container,
+.card-overlay {
+  padding: 20px;
+}
+
+.post-wrap figure {
+  padding: 20px 0;
+}
+
+.logo-wrap {
+  padding: 20px 0 20px 20px;
+}
+
+.about-part-4,
+.about-part-3,
+.about-part-2 {
+  padding: 20px 20px 40px 20px;
+}
+
+.contact {
+  padding: 20px 20px 80px 20px;
+}
+
+.cta {
+  padding: 23px 36px;
+}
+
+.contact-main,
+.blog-parent,
+.main-blog,
+.about-main {
+  padding: 40px 0px;
+}
+
+.mobile-cards-parent,
+.post-wrap {
+  padding: 40px 20px;
+}
+
+.socials {
+  padding: 50px 100px;
+}

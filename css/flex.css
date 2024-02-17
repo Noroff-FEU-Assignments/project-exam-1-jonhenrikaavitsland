@@ -1,0 +1,136 @@
+/* 
+6.  Flex
+*/
+
+.post-wrap article div,
+.aligncenter,
+footer,
+.mobile-nav,
+.navigation-wrap,
+.flex {
+  display: flex;
+}
+
+.post-wrap article div,
+footer,
+.mobile-nav,
+.flex-col {
+  flex-direction: column;
+}
+
+
+.in-form,
+.mobile-cards-parent,
+.modal-small-container,
+.blog-parent {
+  flex-wrap: wrap;
+}
+
+.view-more,
+.link-prev-next > div,
+.link-wrap a,
+.twitter,
+.instagram,
+.tiktok,
+.socials,
+.hero-bottom a,
+.main-post-specific article,
+.cta-card,
+.close-modal,
+.modal-container,
+.about-part-4 > div,
+.about-part-3 > div,
+.about-part-2 > div,
+.about-main article,
+.profile-img-container,
+.about-part-1,
+.about-main,
+.copyright {
+  align-items: center;
+}
+
+.error-container {
+  align-items: flex-start;
+}
+
+.card-overlay,
+.modal-wrap,
+.menu-container,
+.logo {
+  align-items: flex-end;
+}
+
+.btn-wrap,
+.link-home-wrap,
+.mobile-cards-parent,
+.hero-bottom,
+.hero-img,
+.aligncenter,
+.blog-parent,
+.close-modal,
+.modal-container,
+.profile-img-wrap,
+.profile-img-container,
+.copyright,
+.link-container {
+  justify-content: center;
+}
+
+.link-wrap,
+footer {
+  justify-content: flex-end;
+}
+
+.card-bottom-wrap,
+.navigation-wrap {
+  justify-content: space-between;
+}
+
+
+.link-prev-next h3,
+.menu-container {
+  flex: 1;
+}
+
+.cta-view-more {
+  flex: 100%;
+}
+
+.link-wrap a,
+.hero-bottom a,
+.cta-card,
+.copyright {
+  gap: 6px;
+}
+
+.link-prev-next > div {
+  gap: 10px;
+}
+
+.twitter,
+.instagram,
+.tiktok {
+  gap: 14px;
+}
+
+.post-wrap article div,
+.about-part-4 section,
+.about-part-3 section,
+.about-part-2 section,
+.about-part-1 section,
+.link-container,
+footer {
+  gap: 20px;
+}
+
+.view-more,
+.mobile-cards-parent,
+.blog-parent,
+.mobile-nav {
+  gap: 30px;
+}
+
+.socials,
+.post-wrap {
+  gap: 40px;
+}

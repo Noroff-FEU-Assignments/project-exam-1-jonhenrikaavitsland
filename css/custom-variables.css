@@ -1,0 +1,40 @@
+/* 
+1.  Custom Variables
+*/
+
+:root {
+  /* Colors */
+  --blue-major: #1D4289;
+  --white-major: #FFF;
+  --black-major: #000;
+  --hover: #adbfe0;
+  --time-major: #777676;
+
+  /* Font Family */
+  --ff-lora: 'Lora', serif;
+  --ff-merriweather: 'Merriweather', serif;
+
+  /* Font weight */
+  --w4: 400;
+  --w5: 500;
+  --w6: 600;
+  --w7: 700;
+
+  /* Font Sizes */
+  --s16: 1rem;
+  --s18: 1.125rem;
+  --s20: 1.25rem;
+  --s21: 1.3125rem;
+  --s24: 1.5rem;
+  --s30: 1.875rem;
+  --s36: 2.25rem;
+
+  /* Line Height */
+  --lh-1: 1;
+  --lh-mid: 1.5;
+  --lh-27: 27px;
+
+  /* Border Radius */
+  --r10: 10px;
+  --r20: 20px;
+}
