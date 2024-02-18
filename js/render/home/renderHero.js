@@ -7,7 +7,6 @@ export function renderHero(images) {
 
   if (!parent) throw ERROR_NO_PARENT;
 
-  console.log(images[0]);
   for (let i = 0; i < images.length; i++) {
     if (images[i].id === "134") {
       const heroImg = document.createElement("img");
