@@ -1,4 +1,4 @@
-# My Science Museum: Semester Project 1
+# The Zookeeper's Journal - Project Exam 1
 
 ![image](./assets/zookeepers-journal.jpg)
 
